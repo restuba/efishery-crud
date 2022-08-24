@@ -6,3 +6,4 @@ export { default as Pagination } from './pagination';
 export { default as Navigation } from './navigation';
 export { default as Modal } from './modal';
 export { default as ActionMenus } from './actionMenus';
+export { default as List } from './list';

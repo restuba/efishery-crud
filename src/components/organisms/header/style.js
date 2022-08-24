@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colors } from '../../../configs';
+import { breakpoints, colors } from '../../../configs';
 
 const Wrapper = styled.div`
   position: sticky;
@@ -24,5 +24,9 @@ export const MainHeader = styled.div`
   align-items: center;
   .component_logo {
     height: 26px;
+  }
+
+  @media screen and (min-width: ${breakpoints.md}) {
+    padding: 16px 40px;
   }
 `;

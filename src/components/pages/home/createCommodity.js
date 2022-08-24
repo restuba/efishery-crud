@@ -1,30 +1,53 @@
+import { message } from 'antd';
 import { useForm } from 'antd/lib/form/Form';
-import React from 'react';
+import React, { useState } from 'react';
 import { commonMessage } from '../../../configs';
+import { commodityService } from '../../../services';
 import { Input, Select } from '../../atoms';
 import { Form, Modal } from '../../molecules';
 
-const sizeList = [
-  {
-    value: '1',
-    label: 'Size 1',
-  },
-  {
-    value: '2',
-    label: 'Size 2',
-  },
-];
-
 const CreateCommodity = (props) => {
   const [form] = useForm();
-  const { isShow, onClose } = props;
-
-  const onSubmit = () => {};
+  const [isLoading, setIsLoading] = useState(false);
+  const [selectedProvince, setSelectedProvince] = useState(null);
+  const { isShow, onClose, cityList, provinceList, sizeList, setIsRefetch } =
+    props;
 
   const onCloseHandler = () => {
     form.resetFields();
     onClose();
   };
+
+  const onSubmit = (values) => {
+    const body = {
+      komoditas: values?.name?.trim(),
+      area_provinsi: values?.province_area,
+      area_kota: values?.city_area,
+      price: values?.price?.toString(),
+      size: values?.size,
+    };
+    setIsLoading(true);
+    commodityService
+      .createCommodity(body)
+      .then(() => {
+        message.success(commonMessage.successCreate('commodity'));
+        onCloseHandler();
+        setIsRefetch((prev) => {
+          return !prev;
+        });
+      })
+      .catch(() => {
+        message.error(commonMessage.failedCreate('commodity'));
+      })
+      .finally(() => {
+        setIsLoading(false);
+      });
+  };
+
+  const optionCity = cityList?.filter((item) => {
+    if (!selectedProvince) return item;
+    return item?.province === selectedProvince;
+  });
 
   return (
     <Modal
@@ -34,6 +57,7 @@ const CreateCommodity = (props) => {
       onCancel={onCloseHandler}
       width={820}
       okForm="create-commodity"
+      isLoadingButton={isLoading}
     >
       <Form
         form={form}
@@ -63,7 +87,14 @@ const CreateCommodity = (props) => {
             },
           ]}
         >
-          <Select options={sizeList} placeholder="Province area" />
+          <Select
+            options={provinceList}
+            onChange={(value) => {
+              setSelectedProvince(value);
+              form.setFieldsValue({ city_area: null });
+            }}
+            placeholder="Province area"
+          />
         </Form.Item>
         <Form.Item
           label="City Area"
@@ -75,7 +106,7 @@ const CreateCommodity = (props) => {
             },
           ]}
         >
-          <Select options={sizeList} placeholder="City area" />
+          <Select options={optionCity} placeholder="City area" />
         </Form.Item>
         <Form.Item
           label="Price"
