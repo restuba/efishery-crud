@@ -1,9 +1,10 @@
-import { ConfigProvider } from 'antd';
 import React from 'react';
+import { ConfigProvider } from 'antd';
 import { EmptyResult, Table } from '../../molecules';
+import columns from './content.column';
 
 const content = (props) => {
-  const { keyword, userList } = props;
+  const { keyword, dataSource } = props;
   return (
     <ConfigProvider
       renderEmpty={() => {
@@ -23,7 +24,7 @@ const content = (props) => {
         );
       }}
     >
-      <Table dataSource={userList} rowKey="id" />
+      <Table dataSource={dataSource} columns={columns} rowKey="uuid" />
     </ConfigProvider>
   );
 };

@@ -6,6 +6,7 @@ import { PageTitle } from '../../molecules';
 import { FilterSearch } from '../../organisms';
 import { MainTemplate } from '../../templates';
 import Content from './content';
+import dummy from './dummy.json';
 
 const options = [
   {
@@ -19,6 +20,7 @@ const options = [
 ];
 
 const Index = () => {
+  const list = dummy;
   return (
     <MainTemplate>
       <Helmet>
@@ -49,7 +51,7 @@ const Index = () => {
           />
         </Col>
         <Col span={24}>
-          <Content />
+          <Content dataSource={list} />
         </Col>
         <Col span={24}>Hello from Home</Col>
       </Row>
