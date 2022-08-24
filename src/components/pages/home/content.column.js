@@ -1,4 +1,5 @@
 import { ActionMenus } from '../../molecules';
+import { toCurrency } from '../../../utils';
 import actions from './content.action';
 
 const columns = (props) => {
@@ -6,7 +7,7 @@ const columns = (props) => {
     props;
   return [
     {
-      title: 'Komoditas',
+      title: 'Commodity',
       dataIndex: 'komoditas',
       sorter: (a, b) => {
         return a?.komoditas.localeCompare(b?.komoditas);
@@ -16,7 +17,7 @@ const columns = (props) => {
       },
     },
     {
-      title: 'Area Provinsi',
+      title: 'Province',
       dataIndex: 'area_provinsi',
       sorter: (a, b) => {
         return a?.area_provinsi.localeCompare(b?.area_provinsi);
@@ -26,7 +27,7 @@ const columns = (props) => {
       },
     },
     {
-      title: 'Area Kota',
+      title: 'City',
       dataIndex: 'area_kota',
       sorter: (a, b) => {
         return a?.area_kota.localeCompare(b?.area_kota);
@@ -52,7 +53,8 @@ const columns = (props) => {
         return a.price - b.price;
       },
       render: (record) => {
-        return record || '-';
+        if (!record) return '-';
+        return toCurrency(record, 'IDR');
       },
     },
     {
