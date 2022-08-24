@@ -20,6 +20,11 @@ const getListCommodity = (params = {}) => {
   return BaseService.get('/list', { params: query });
 };
 
+const createCommodity = (body) => {
+  return BaseService.post('/list', body);
+};
+
 export default {
   getListCommodity,
+  createCommodity,
 };

@@ -10,18 +10,8 @@ import { pageOptions } from '../../../configs';
 import CreateCommodity from './createCommodity';
 import EditCommodity from './editCommodity';
 import DeleteCommodity from './deleteCommodity';
-import { commodityService } from '../../../services';
-
-const options = [
-  {
-    value: '1',
-    label: 'Option 1',
-  },
-  {
-    value: '2',
-    label: 'Option 2',
-  },
-];
+import { areaService, commodityService } from '../../../services';
+import { getArrayUniqueByKey } from '../../../utils';
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -35,6 +25,8 @@ const Index = () => {
 
   const [selectedCommodity, setSelectedCommodity] = useState({});
   const [commodityList, setCommodityList] = useState([]);
+  const [provinceList, setProvinceList] = useState([]);
+  const [cityList, setCityList] = useState([]);
 
   useEffect(() => {
     setIsLoading(true);
@@ -51,6 +43,34 @@ const Index = () => {
         setIsLoading(false);
       });
   }, [keyword, currentPage, pageSize]);
+
+  useEffect(() => {
+    areaService.getListArea().then((res) => {
+      setProvinceList(
+        getArrayUniqueByKey(
+          res.map((item) => {
+            return {
+              value: item?.province,
+              label: item?.province,
+            };
+          }),
+          'value'
+        )
+      );
+      setCityList(
+        getArrayUniqueByKey(
+          res.map((item) => {
+            return {
+              value: item?.city,
+              label: item?.city,
+              province: item?.province,
+            };
+          }),
+          'value'
+        )
+      );
+    });
+  }, []);
 
   const onShowCreateModal = () => {
     setShowCreateModal(true);
@@ -107,12 +127,12 @@ const Index = () => {
               allowClear: true,
             }}
             selectProps={{
-              placeholder: 'Select',
-              options,
+              placeholder: 'Filter by province',
+              options: provinceList,
             }}
             additionalSelectProps={{
-              placeholder: 'Additional Select 1',
-              options,
+              placeholder: 'Filter by city',
+              options: cityList,
             }}
           />
         </Col>
