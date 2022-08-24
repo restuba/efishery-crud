@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Col, Row } from 'antd';
 import { Helmet } from 'react-helmet-async';
 import { Button } from '../../atoms';
@@ -7,6 +7,7 @@ import { FilterSearch } from '../../organisms';
 import { MainTemplate } from '../../templates';
 import Content from './content';
 import dummy from './dummy.json';
+import { pageOptions } from '../../../configs';
 
 const options = [
   {
@@ -20,6 +21,11 @@ const options = [
 ];
 
 const Index = () => {
+  const [pageSize, setPageSize] = useState(pageOptions[0]);
+  // eslint-disable-next-line no-unused-vars
+  const [keyword, setKeyword] = useState('');
+  const [currentPage, setCurrentPage] = useState(0);
+
   const list = dummy;
   return (
     <MainTemplate>
@@ -51,7 +57,15 @@ const Index = () => {
           />
         </Col>
         <Col span={24}>
-          <Content dataSource={list} />
+          <Content
+            dataSource={list}
+            pageSize={pageSize}
+            setPageSize={setPageSize}
+            keyword={keyword}
+            currentPage={currentPage}
+            setCurrentPage={setCurrentPage}
+            totalData={list?.length}
+          />
         </Col>
         <Col span={24}>Hello from Home</Col>
       </Row>

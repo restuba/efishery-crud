@@ -1,10 +1,24 @@
 import React from 'react';
 import { ConfigProvider } from 'antd';
-import { EmptyResult, Table } from '../../molecules';
+import { EmptyResult, Pagination, Table } from '../../molecules';
 import columns from './content.column';
+import { pageOptions, pagination } from '../../../configs';
 
 const content = (props) => {
-  const { keyword, dataSource } = props;
+  const {
+    keyword,
+    dataSource,
+    pageSize,
+    setPageSize,
+    currentPage,
+    setCurrentPage,
+    totalData,
+  } = props;
+
+  const onChangePageSize = (page) => {
+    setCurrentPage(page - 1);
+  };
+
   return (
     <ConfigProvider
       renderEmpty={() => {
@@ -24,7 +38,21 @@ const content = (props) => {
         );
       }}
     >
-      <Table dataSource={dataSource} columns={columns} rowKey="uuid" />
+      <Table
+        dataSource={dataSource}
+        columns={columns}
+        rowKey="uuid"
+        pagination={pagination(pageSize)}
+      />
+      <Pagination
+        total={totalData}
+        pageSize={pageSize}
+        setPageSize={setPageSize}
+        current={currentPage + 1}
+        options={pageOptions}
+        onChange={onChangePageSize}
+        setCurrentPage={setCurrentPage}
+      />
     </ConfigProvider>
   );
 };
