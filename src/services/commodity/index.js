@@ -22,7 +22,12 @@ const createCommodity = (body) => {
   return BaseService.post('/list', [body]);
 };
 
+const updateCommodity = ({ newValue, oldValue }) => {
+  return BaseService.put('/list', { condition: oldValue, set: newValue });
+};
+
 export default {
   getListCommodity,
   createCommodity,
+  updateCommodity,
 };

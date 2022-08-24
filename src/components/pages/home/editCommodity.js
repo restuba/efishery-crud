@@ -1,40 +1,71 @@
+import { message } from 'antd';
 import { useForm } from 'antd/lib/form/Form';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { commonMessage } from '../../../configs';
+import { commodityService } from '../../../services';
 import { Input, Select } from '../../atoms';
 import { Form, Modal } from '../../molecules';
 
-const sizeList = [
-  {
-    value: '1',
-    label: 'Size 1',
-  },
-  {
-    value: '2',
-    label: 'Size 2',
-  },
-];
-
 const EditCommodity = (props) => {
   const [form] = useForm();
-  const { isShow, onClose, selectedCommodity } = props;
+  const [isLoading, setIsLoading] = useState(false);
+  const [selectedProvince, setSelectedProvince] = useState(null);
+  const {
+    isShow,
+    onClose,
+    selectedCommodity,
+    cityList,
+    provinceList,
+    sizeList,
+    setIsRefetch,
+  } = props;
 
   useEffect(() => {
     form.setFieldsValue({
       name: selectedCommodity?.komoditas,
       province_area: selectedCommodity?.area_provinsi,
       city_area: selectedCommodity?.area_kota,
-      price: selectedCommodity?.price,
+      price: Number(selectedCommodity?.price),
       size: selectedCommodity?.size,
     });
   }, [selectedCommodity, form]);
-
-  const onSubmit = () => {};
 
   const onCloseHandler = () => {
     form.resetFields();
     onClose();
   };
+
+  const onSubmit = (values) => {
+    const body = {
+      komoditas: values?.name?.trim(),
+      area_provinsi: values?.province_area,
+      area_kota: values?.city_area,
+      price: values?.price?.toString(),
+      size: values?.size,
+    };
+    setIsLoading(true);
+    commodityService
+      .updateCommodity({ oldValue: selectedCommodity, newValue: body })
+      .then(() => {
+        message.success(commonMessage.successUpdate('commodity'));
+        onCloseHandler();
+        setIsRefetch((prev) => {
+          return !prev;
+        });
+      })
+      .catch(() => {
+        message.error(commonMessage.failedUpdate('commodity'));
+      })
+      .finally(() => {
+        setIsLoading(false);
+      });
+  };
+
+  const optionCity = cityList?.filter((item) => {
+    if (!selectedProvince) return item;
+    return item?.province === selectedProvince;
+  });
+
   return (
     <Modal
       isShow={isShow}
@@ -43,6 +74,7 @@ const EditCommodity = (props) => {
       onCancel={onCloseHandler}
       width={820}
       okForm="edit-commodity"
+      isLoadingButton={isLoading}
     >
       <Form
         form={form}
@@ -72,7 +104,14 @@ const EditCommodity = (props) => {
             },
           ]}
         >
-          <Select options={sizeList} placeholder="Province area" />
+          <Select
+            options={provinceList}
+            onChange={(value) => {
+              setSelectedProvince(value);
+              form.setFieldsValue({ city_area: null });
+            }}
+            placeholder="Province area"
+          />
         </Form.Item>
         <Form.Item
           label="City Area"
@@ -84,7 +123,7 @@ const EditCommodity = (props) => {
             },
           ]}
         >
-          <Select options={sizeList} placeholder="City area" />
+          <Select options={optionCity} placeholder="City area" />
         </Form.Item>
         <Form.Item
           label="Price"

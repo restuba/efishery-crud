@@ -23,7 +23,7 @@ const CreateCommodity = (props) => {
       komoditas: values?.name?.trim(),
       area_provinsi: values?.province_area,
       area_kota: values?.city_area,
-      price: values?.city_area?.toString(),
+      price: values?.price?.toString(),
       size: values?.size,
     };
     setIsLoading(true);
@@ -32,7 +32,9 @@ const CreateCommodity = (props) => {
       .then(() => {
         message.success(commonMessage.successCreate('commodity'));
         onCloseHandler();
-        setIsRefetch();
+        setIsRefetch((prev) => {
+          return !prev;
+        });
       })
       .catch(() => {
         message.error(commonMessage.failedCreate('commodity'));

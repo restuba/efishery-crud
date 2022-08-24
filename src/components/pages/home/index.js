@@ -201,6 +201,10 @@ const Index = () => {
           isShow={showEditModal}
           onClose={onCloseEditModal}
           selectedCommodity={selectedCommodity}
+          cityList={cityList}
+          provinceList={provinceList}
+          sizeList={sizeList}
+          setIsRefetch={setIsRefetch}
         />
         <DeleteCommodity
           isShow={showDeleteModal}
