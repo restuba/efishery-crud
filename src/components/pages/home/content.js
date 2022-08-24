@@ -14,6 +14,7 @@ const content = (props) => {
     setCurrentPage,
     totalData,
     onShowEditCommodity,
+    onShowDeleteModal,
     setSelectedCommodity,
   } = props;
 
@@ -42,7 +43,11 @@ const content = (props) => {
     >
       <Table
         dataSource={dataSource}
-        columns={columns({ onShowEditCommodity, setSelectedCommodity })}
+        columns={columns({
+          onShowEditCommodity,
+          onShowDeleteModal,
+          setSelectedCommodity,
+        })}
         rowKey="uuid"
         pagination={pagination(pageSize)}
         rowClassName={(record) => {

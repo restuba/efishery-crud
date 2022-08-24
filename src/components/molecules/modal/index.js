@@ -53,7 +53,7 @@ const Index = (props) => {
             <div className="component_footer">
               {!hideCancelBtn && (
                 <Button
-                  type={type === 'danger' ? 'white' : 'secondary'}
+                  type={type === 'danger' || 'secondary'}
                   onClick={onCancel}
                   loading={isLoadingButton}
                   htmlType="button"

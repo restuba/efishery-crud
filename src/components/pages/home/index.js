@@ -10,6 +10,7 @@ import dummy from './dummy.json';
 import { pageOptions } from '../../../configs';
 import CreateCommodity from './createCommodity';
 import EditCommodity from './editCommodity';
+import DeleteCommodity from './deleteCommodity';
 
 const options = [
   {
@@ -30,6 +31,7 @@ const Index = () => {
 
   const [showCreateModal, setShowCreateModal] = useState(false);
   const [showEditModal, setShowEditModal] = useState(false);
+  const [showDeleteModal, setShowDeleteModal] = useState(false);
 
   const [selectedCommodity, setSelectedCommodity] = useState({});
 
@@ -47,6 +49,14 @@ const Index = () => {
 
   const onCloseEditModal = () => {
     setShowEditModal(false);
+  };
+
+  const onShowDeleteModal = () => {
+    setShowDeleteModal(true);
+  };
+
+  const onCloseDeleteModal = () => {
+    setShowDeleteModal(false);
   };
 
   const list = dummy;
@@ -93,6 +103,7 @@ const Index = () => {
             totalData={list?.length}
             onShowEditCommodity={onShowEditCommodity}
             setSelectedCommodity={setSelectedCommodity}
+            onShowDeleteModal={onShowDeleteModal}
           />
         </Col>
         <CreateCommodity
@@ -102,6 +113,11 @@ const Index = () => {
         <EditCommodity
           isShow={showEditModal}
           onClose={onCloseEditModal}
+          selectedCommodity={selectedCommodity}
+        />
+        <DeleteCommodity
+          isShow={showDeleteModal}
+          onClose={onCloseDeleteModal}
           selectedCommodity={selectedCommodity}
         />
       </Row>

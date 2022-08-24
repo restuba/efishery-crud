@@ -2,7 +2,12 @@ import { EditOutlined, MinusCircleOutlined } from '@ant-design/icons';
 import { ActionMenus } from '../../molecules';
 
 const actions = (props) => {
-  const { record, onShowEditCommodity, setSelectedCommodity } = props;
+  const {
+    record,
+    onShowEditCommodity,
+    onShowDeleteModal,
+    setSelectedCommodity,
+  } = props;
   return [
     {
       id: 1,
@@ -18,12 +23,17 @@ const actions = (props) => {
       text: 'Delete Commodity',
       icon: <MinusCircleOutlined />,
       type: 'danger',
+      onClick: () => {
+        onShowDeleteModal();
+        setSelectedCommodity(record);
+      },
     },
   ];
 };
 
 const columns = (props) => {
-  const { onShowEditCommodity, setSelectedCommodity } = props;
+  const { onShowEditCommodity, onShowDeleteModal, setSelectedCommodity } =
+    props;
   return [
     {
       title: 'Komoditas',
@@ -69,6 +79,7 @@ const columns = (props) => {
             items={actions({
               record,
               onShowEditCommodity,
+              onShowDeleteModal,
               setSelectedCommodity,
             })}
           />
