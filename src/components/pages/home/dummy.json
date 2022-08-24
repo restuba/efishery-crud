@@ -1,0 +1,2172 @@
+[
+  {
+    "uuid": "7b91e96d-1903-4e67-89e5-c8e42d31bdd1",
+    "komoditas": "BAWAL",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": " PURWOREJO",
+    "size": "160",
+    "price": "290000",
+    "tgl_parsed": "2022-01-01T17:51:11.000Z",
+    "timestamp": "1660734513770"
+  },
+  {
+    "uuid": null,
+    "komoditas": null,
+    "area_provinsi": null,
+    "area_kota": null,
+    "size": null,
+    "price": null,
+    "tgl_parsed": null,
+    "timestamp": null
+  },
+  {
+    "uuid": "dd09261d-5e09-4fcb-a2cc-9b2251414cdc",
+    "komoditas": "PATIN",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "DEPOK",
+    "size": "180",
+    "price": "25000",
+    "tgl_parsed": "2022-01-04T23:15:44Z",
+    "timestamp": "1641338144818"
+  },
+  {
+    "uuid": "7d326c76-9a8a-48e8-b09e-723cfe98701f",
+    "komoditas": "NILA HITAM",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "SITUBONDO",
+    "size": "180",
+    "price": "3000",
+    "tgl_parsed": "2022-01-05T05:00:38Z",
+    "timestamp": "1641358838433"
+  },
+  {
+    "uuid": "f3b54270-e682-4050-8bbc-24bf2bd1af74",
+    "komoditas": "MAS",
+    "area_provinsi": "KALIMANTAN TIMUR",
+    "area_kota": "BORNEO",
+    "size": "70",
+    "price": "98000",
+    "tgl_parsed": "2022-01-05T19:10:32Z",
+    "timestamp": "1641409832299"
+  },
+  {
+    "uuid": "953e80ef-b7d8-471f-bfc2-3ee811d793e1",
+    "komoditas": "GURAME",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "CILACAP",
+    "size": "60",
+    "price": "19000",
+    "tgl_parsed": "2022-01-08T13:50:35Z",
+    "timestamp": "1641649835000"
+  },
+  {
+    "uuid": "ade5bcff-e4c9-4d7e-abf3-aaab337ae0ce",
+    "komoditas": "BAWAL",
+    "area_provinsi": "DKI JAKARTA",
+    "area_kota": "KOTA TUA",
+    "size": "130",
+    "price": "93000",
+    "tgl_parsed": "2022-01-08T16:55:00Z",
+    "timestamp": "1641660900307"
+  },
+  {
+    "uuid": "372524d4-2a24-44e5-bca9-ad69568072b5",
+    "komoditas": "MAS",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "PURWOREJO",
+    "size": "50",
+    "price": "98000",
+    "tgl_parsed": "2022-01-10T22:43:48Z",
+    "timestamp": "1641854628852"
+  },
+  {
+    "uuid": "419a62ce-6bb3-4eb0-8898-603e6d41b307",
+    "komoditas": "BANDENG",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "PURWOREJO",
+    "size": "40",
+    "price": "79000",
+    "tgl_parsed": "2022-01-11T03:19:12Z",
+    "timestamp": "1641871152447"
+  },
+  {
+    "uuid": "b13596eb-796b-4a21-9251-cb4757309f8c",
+    "komoditas": "BAWAL",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "CILILIN",
+    "size": "170",
+    "price": "12000",
+    "tgl_parsed": "2022-01-11T05:57:27Z",
+    "timestamp": "1641880647737"
+  },
+  {
+    "uuid": "46849403-c682-4720-96a6-1b56af13baa1",
+    "komoditas": "NILA HITAM",
+    "area_provinsi": "KALIMANTAN TIMUR",
+    "area_kota": "BORNEO",
+    "size": "80",
+    "price": "7000",
+    "tgl_parsed": "2022-01-12T05:43:35Z",
+    "timestamp": "1641966215456"
+  },
+  {
+    "uuid": "dec60f90-c3cd-47c3-aa80-895fdb008be4",
+    "komoditas": "MAS",
+    "area_provinsi": "SUMATERA UTARA",
+    "area_kota": "MEDAN",
+    "size": "130",
+    "price": "58000",
+    "tgl_parsed": "2022-01-12T16:29:16Z",
+    "timestamp": "1642004956338"
+  },
+  {
+    "uuid": "86bb7088-8388-4da3-a5fd-b7f29bd1522d",
+    "komoditas": "PATIN",
+    "area_provinsi": "DKI JAKARTA",
+    "area_kota": "KOTA TUA",
+    "size": "140",
+    "price": "3000",
+    "tgl_parsed": "2022-01-13T12:01:34Z",
+    "timestamp": "1642075294288"
+  },
+  {
+    "uuid": "421b62fc-2402-446a-be6d-3a5ad3f29edc",
+    "komoditas": "NILA HITAM",
+    "area_provinsi": "SULAWESI BARAT",
+    "area_kota": "MAMUJU UTARA",
+    "size": "100",
+    "price": "32000",
+    "tgl_parsed": "2022-01-14T13:04:53Z",
+    "timestamp": "1642165493961"
+  },
+  {
+    "uuid": "c3647ec9-b28b-48ba-8db8-9e464ac02eea",
+    "komoditas": "LELE",
+    "area_provinsi": "BALI",
+    "area_kota": "BULELENG",
+    "size": "120",
+    "price": "5000",
+    "tgl_parsed": "2022-01-14T20:43:58Z",
+    "timestamp": "1642193038033"
+  },
+  {
+    "uuid": "3fd3a1de-0280-4fc4-bc13-141f2d64d964",
+    "komoditas": "LELE",
+    "area_provinsi": "KALIMANTAN TIMUR",
+    "area_kota": "BORNEO",
+    "size": "40",
+    "price": "93000",
+    "tgl_parsed": "2022-01-16T00:50:04Z",
+    "timestamp": "1642294204929"
+  },
+  {
+    "uuid": "cce6ede6-f464-4e5a-b9d1-9161ad6fc5d5",
+    "komoditas": "NILA MERAH",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "SITUBONDO",
+    "size": "70",
+    "price": "34000",
+    "tgl_parsed": "2022-01-17T00:19:54Z",
+    "timestamp": "1642378794567"
+  },
+  {
+    "uuid": "a3168ed0-8e19-4bee-9a74-e310c09579f3",
+    "komoditas": "LELE",
+    "area_provinsi": "SUMATERA BARAT",
+    "area_kota": "PADANG PARIAMAN",
+    "size": "160",
+    "price": "43000",
+    "tgl_parsed": "2022-01-17T19:38:47Z",
+    "timestamp": "1642448327707"
+  },
+  {
+    "uuid": "9473ec58-8e69-4b13-a072-96d74256bda6",
+    "komoditas": "BAWAL",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "CILILIN",
+    "size": "80",
+    "price": "63000",
+    "tgl_parsed": "2022-01-18T12:10:04Z",
+    "timestamp": "1642507804040"
+  },
+  {
+    "uuid": "8242a8e6-94ff-4905-8901-5491984011d5",
+    "komoditas": "BANDENG",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "CILILIN",
+    "size": "200",
+    "price": "56000",
+    "tgl_parsed": "2022-01-19T07:14:07Z",
+    "timestamp": "1642576447110"
+  },
+  {
+    "uuid": "d8a9dfc8-197b-4943-9208-0ed1151b3677",
+    "komoditas": "BAWAL",
+    "area_provinsi": "SULAWESI BARAT",
+    "area_kota": "MAMUJU UTARA",
+    "size": "80",
+    "price": "13000",
+    "tgl_parsed": "2022-01-20T03:33:00Z",
+    "timestamp": "1642649580373"
+  },
+  {
+    "uuid": "1ab67a98-e172-4afd-a387-c13b2f491dbd",
+    "komoditas": "GURAME",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "PROBOLINGGO",
+    "size": "170",
+    "price": "41000",
+    "tgl_parsed": "2022-01-21T03:38:37Z",
+    "timestamp": "1642736317504"
+  },
+  {
+    "uuid": "f772804f-073b-4db7-b8f7-c77bdd7613b5",
+    "komoditas": "BANDENG",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "CILILIN",
+    "size": "140",
+    "price": "20000",
+    "tgl_parsed": "2022-01-21T18:41:19Z",
+    "timestamp": "1642790479095"
+  },
+  {
+    "uuid": "d47007c9-af81-4b7e-afb3-641f724e4380",
+    "komoditas": "BAWAL",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "PURWOREJO",
+    "size": "190",
+    "price": "89000",
+    "tgl_parsed": "2022-01-21T21:58:18Z",
+    "timestamp": "1642802298659"
+  },
+  {
+    "uuid": "7e2a1899-c8f1-4380-b17e-29704f99c665",
+    "komoditas": "NILA MERAH",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "BANYUWANGI",
+    "size": "50",
+    "price": "86000",
+    "tgl_parsed": "2022-01-22T02:46:27Z",
+    "timestamp": "1642819587654"
+  },
+  {
+    "uuid": "5046151f-8168-4ba9-bc1e-adf4ad2cac63",
+    "komoditas": "NILA HITAM",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "JEMBER",
+    "size": "120",
+    "price": "62000",
+    "tgl_parsed": "2022-01-22T03:00:41Z",
+    "timestamp": "1642820441066"
+  },
+  {
+    "uuid": "38f351a7-c66e-45a5-9006-c4fc432828b8",
+    "komoditas": "LELE",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "CILILIN",
+    "size": "90",
+    "price": "69000",
+    "tgl_parsed": "2022-01-22T15:24:11Z",
+    "timestamp": "1642865051223"
+  },
+  {
+    "uuid": "29c6967f-d9fb-45b2-b644-1a074e208786",
+    "komoditas": "NILA MERAH",
+    "area_provinsi": "SUMATERA UTARA",
+    "area_kota": "MEDAN",
+    "size": "50",
+    "price": "88000",
+    "tgl_parsed": "2022-01-22T15:39:48Z",
+    "timestamp": "1642865988928"
+  },
+  {
+    "uuid": "c5743c32-4db1-4127-894b-f8049fc61bd7",
+    "komoditas": "BAWAL",
+    "area_provinsi": "BALI",
+    "area_kota": "BULELENG",
+    "size": "90",
+    "price": "63000",
+    "tgl_parsed": "2022-01-24T09:31:04Z",
+    "timestamp": "1643016664993"
+  },
+  {
+    "uuid": "d6643fbc-93ec-43ed-8d7e-14e80c6edc68",
+    "komoditas": "LELE",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "PROBOLINGGO",
+    "size": "130",
+    "price": "93000",
+    "tgl_parsed": "2022-01-25T11:47:26Z",
+    "timestamp": "1643111246138"
+  },
+  {
+    "uuid": "a00a298f-e0b0-474e-9bb2-39f5dd0f8661",
+    "komoditas": "NILA MERAH",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "DEPOK",
+    "size": "100",
+    "price": "57000",
+    "tgl_parsed": "2022-01-25T19:25:28Z",
+    "timestamp": "1643138728481"
+  },
+  {
+    "uuid": "ac38834a-79a4-4cb1-91cb-91c8692b94c8",
+    "komoditas": "NILA MERAH",
+    "area_provinsi": "DKI JAKARTA",
+    "area_kota": "KOTA TUA",
+    "size": "130",
+    "price": "89000",
+    "tgl_parsed": "2022-01-26T01:36:09Z",
+    "timestamp": "1643160969488"
+  },
+  {
+    "uuid": "d5fac371-0c9d-4135-85ee-28b252ff3b55",
+    "komoditas": "BANDENG",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "BANDUNG",
+    "size": "40",
+    "price": "20000",
+    "tgl_parsed": "2022-01-27T15:18:43Z",
+    "timestamp": "1643296723312"
+  },
+  {
+    "uuid": "abd95585-0a98-43d4-a794-282b0471e034",
+    "komoditas": "BANDENG",
+    "area_provinsi": "BANTEN",
+    "area_kota": "PANDEGLANG",
+    "size": "130",
+    "price": "54000",
+    "tgl_parsed": "2022-01-27T17:17:04Z",
+    "timestamp": "1643303824212"
+  },
+  {
+    "uuid": "911975e7-e3cd-4111-a35f-6f2ea46fafd1",
+    "komoditas": "LELE",
+    "area_provinsi": "DKI JAKARTA",
+    "area_kota": "KOTA TUA",
+    "size": "80",
+    "price": "10000",
+    "tgl_parsed": "2022-01-28T00:51:56Z",
+    "timestamp": "1643331116068"
+  },
+  {
+    "uuid": "ddcf1cef-5180-4808-8e03-72ed9abcff11",
+    "komoditas": "LELE",
+    "area_provinsi": "DKI JAKARTA",
+    "area_kota": "KOTA TUA",
+    "size": "170",
+    "price": "93000",
+    "tgl_parsed": "2022-01-28T19:13:25Z",
+    "timestamp": "1643397205553"
+  },
+  {
+    "uuid": "f16eb6fd-4984-42e3-a8d7-a4a7e0bdc9c1",
+    "komoditas": "PATIN",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "TEGAL",
+    "size": "80",
+    "price": "56000",
+    "tgl_parsed": "2022-01-28T22:08:38Z",
+    "timestamp": "1643407718705"
+  },
+  {
+    "uuid": "de441d0e-bf1e-4792-9b96-7345bdcd76a4",
+    "komoditas": "MAS",
+    "area_provinsi": "ACEH",
+    "area_kota": "ACEH KOTA",
+    "size": "170",
+    "price": "43000",
+    "tgl_parsed": "2022-01-30T04:20:07Z",
+    "timestamp": "1643516407132"
+  },
+  {
+    "uuid": "974bed5b-a86b-416b-8d61-043da1e23b43",
+    "komoditas": "LELE",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "SITUBONDO",
+    "size": "180",
+    "price": "2000",
+    "tgl_parsed": "2022-01-30T09:12:35Z",
+    "timestamp": "1643533955114"
+  },
+  {
+    "uuid": "5b35d856-46bb-4a43-b301-79fa7a4d556c",
+    "komoditas": "PATIN",
+    "area_provinsi": "SUMATERA BARAT",
+    "area_kota": "PADANG PARIAMAN",
+    "size": "70",
+    "price": "80000",
+    "tgl_parsed": "2022-01-31T03:46:34Z",
+    "timestamp": "1643600794206"
+  },
+  {
+    "uuid": "e9dc5390-c967-4c56-8e51-4754f55ba24d",
+    "komoditas": "GURAME",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "JEMBER",
+    "size": "170",
+    "price": "37000",
+    "tgl_parsed": "2022-01-31T19:43:12Z",
+    "timestamp": "1643658192320"
+  },
+  {
+    "uuid": "40447635-dd01-47ce-b9e1-0683a4111247",
+    "komoditas": "BAWAL",
+    "area_provinsi": "KALIMANTAN TIMUR",
+    "area_kota": "BORNEO",
+    "size": "80",
+    "price": "43000",
+    "tgl_parsed": "2022-02-01T13:12:09Z",
+    "timestamp": "1643721129515"
+  },
+  {
+    "uuid": "55773556-a675-4267-a0bb-d1c2b2546798",
+    "komoditas": "NILA MERAH",
+    "area_provinsi": "SULAWESI BARAT",
+    "area_kota": "MAMUJU UTARA",
+    "size": "200",
+    "price": "34000",
+    "tgl_parsed": "2022-02-01T14:07:02Z",
+    "timestamp": "1643724422701"
+  },
+  {
+    "uuid": "c5e7177f-2229-4e8c-9da9-896389824d2a",
+    "komoditas": "NILA MERAH",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "PEMALANG",
+    "size": "90",
+    "price": "63000",
+    "tgl_parsed": "2022-02-02T04:08:12Z",
+    "timestamp": "1643774892656"
+  },
+  {
+    "uuid": "0061e6a8-cc06-4e8f-b2d6-a55083c44d73",
+    "komoditas": "MAS",
+    "area_provinsi": "SUMATERA BARAT",
+    "area_kota": "PADANG PARIAMAN",
+    "size": "30",
+    "price": "69000",
+    "tgl_parsed": "2022-02-02T23:47:25Z",
+    "timestamp": "1643845645662"
+  },
+  {
+    "uuid": "1447d99b-7907-47a6-9850-7719e5e98167",
+    "komoditas": "BANDENG",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "CILILIN",
+    "size": "100",
+    "price": "97000",
+    "tgl_parsed": "2022-02-03T00:19:49Z",
+    "timestamp": "1643847589509"
+  },
+  {
+    "uuid": "28ab1982-a5c7-4b7b-8a39-d7c5761694a2",
+    "komoditas": "PATIN",
+    "area_provinsi": "SULAWESI BARAT",
+    "area_kota": "MAMUJU UTARA",
+    "size": "40",
+    "price": "87000",
+    "tgl_parsed": "2022-02-03T11:58:04Z",
+    "timestamp": "1643889484440"
+  },
+  {
+    "uuid": "de052900-6a73-4901-9c8f-7f5361082e3f",
+    "komoditas": "BAWAL",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "PEMALANG",
+    "size": "180",
+    "price": "53000",
+    "tgl_parsed": "2022-02-04T07:37:56Z",
+    "timestamp": "1643960276372"
+  },
+  {
+    "uuid": "ec6cd1bb-728d-4f5d-832f-a0aa8872da16",
+    "komoditas": "GURAME",
+    "area_provinsi": "SUMATERA UTARA",
+    "area_kota": "MEDAN",
+    "size": "150",
+    "price": "74000",
+    "tgl_parsed": "2022-02-04T22:59:26Z",
+    "timestamp": "1644015566794"
+  },
+  {
+    "uuid": "2591556e-73e4-4330-8e5b-3309f0c2d1fc",
+    "komoditas": "BANDENG",
+    "area_provinsi": "SUMATERA UTARA",
+    "area_kota": "MEDAN",
+    "size": "60",
+    "price": "67000",
+    "tgl_parsed": "2022-02-08T18:23:34Z",
+    "timestamp": "1644344614583"
+  },
+  {
+    "uuid": "ebe6a1e4-5634-4eb0-a2a7-7a1493d15add",
+    "komoditas": "BAWAL",
+    "area_provinsi": "ACEH",
+    "area_kota": "ACEH KOTA",
+    "size": "120",
+    "price": "14000",
+    "tgl_parsed": "2022-02-09T12:32:37Z",
+    "timestamp": "1644409957150"
+  },
+  {
+    "uuid": "8ba143f2-1827-48b5-aadb-0c155aa5b2f7",
+    "komoditas": "PATIN",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "PEMALANG",
+    "size": "100",
+    "price": "93000",
+    "tgl_parsed": "2022-02-09T21:11:00Z",
+    "timestamp": "1644441060032"
+  },
+  {
+    "uuid": "59861aef-b3c6-4032-b5c8-6ca008bed145",
+    "komoditas": "NILA MERAH",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "BANYUWANGI",
+    "size": "150",
+    "price": "63000",
+    "tgl_parsed": "2022-02-10T21:20:16Z",
+    "timestamp": "1644528016941"
+  },
+  {
+    "uuid": "0c3e9ca7-54e6-48e4-9ab9-ad84d6364d7e",
+    "komoditas": "LELE",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "TEGAL",
+    "size": "150",
+    "price": "20000",
+    "tgl_parsed": "2022-02-10T21:41:29Z",
+    "timestamp": "1644529289103"
+  },
+  {
+    "uuid": "aba7a2e2-6682-48a2-8635-7e25c8651df6",
+    "komoditas": "LELE",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "TEGAL",
+    "size": "180",
+    "price": "42000",
+    "tgl_parsed": "2022-02-11T08:41:01Z",
+    "timestamp": "1644568861743"
+  },
+  {
+    "uuid": "b40599bd-5937-447a-87a7-936fa3a6e4a7",
+    "komoditas": "NILA MERAH",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "CILACAP",
+    "size": "200",
+    "price": "9000",
+    "tgl_parsed": "2022-02-12T00:25:53Z",
+    "timestamp": "1644625553328"
+  },
+  {
+    "uuid": "62b4d360-234b-4c8f-98a5-b1a2a1e27e35",
+    "komoditas": "NILA HITAM",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "CILACAP",
+    "size": "140",
+    "price": "13000",
+    "tgl_parsed": "2022-02-12T08:05:15Z",
+    "timestamp": "1644653115508"
+  },
+  {
+    "uuid": "bd87547e-79ae-448a-9a80-5f1f3675bf58",
+    "komoditas": "BAWAL",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "CILILIN",
+    "size": "120",
+    "price": "56000",
+    "tgl_parsed": "2022-02-12T20:40:49Z",
+    "timestamp": "1644698449782"
+  },
+  {
+    "uuid": "968e15bb-b3c4-4b92-9a6e-0f47ed34354a",
+    "komoditas": "BANDENG",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "TEGAL",
+    "size": "40",
+    "price": "13000",
+    "tgl_parsed": "2022-02-13T09:07:59Z",
+    "timestamp": "1644743279928"
+  },
+  {
+    "uuid": "cf943132-547a-4de7-850c-78742226ce92",
+    "komoditas": "LELE",
+    "area_provinsi": "DKI JAKARTA",
+    "area_kota": "KOTA TUA",
+    "size": "50",
+    "price": "36000",
+    "tgl_parsed": "2022-02-13T10:24:26Z",
+    "timestamp": "1644747866564"
+  },
+  {
+    "uuid": "c669d27c-727e-4de2-9bed-3af1742a4e98",
+    "komoditas": "BANDENG",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "PURWOREJO",
+    "size": "200",
+    "price": "95000",
+    "tgl_parsed": "2022-02-14T09:46:12Z",
+    "timestamp": "1644831972318"
+  },
+  {
+    "uuid": "c58a3ed6-b152-4739-91b8-85213ce13dc0",
+    "komoditas": "LELE",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "PURWOREJO",
+    "size": "130",
+    "price": "28000",
+    "tgl_parsed": "2022-02-16T01:11:08Z",
+    "timestamp": "1644973868881"
+  },
+  {
+    "uuid": "8004da1f-6000-45bf-8920-5a835a1a4d4a",
+    "komoditas": "BANDENG",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "CILACAP",
+    "size": "200",
+    "price": "7000",
+    "tgl_parsed": "2022-02-16T14:19:49Z",
+    "timestamp": "1645021189338"
+  },
+  {
+    "uuid": "26bd4c2a-0d66-4ea9-9d4c-9c723ea3387e",
+    "komoditas": "NILA HITAM",
+    "area_provinsi": "BANTEN",
+    "area_kota": "PANDEGLANG",
+    "size": "100",
+    "price": "88000",
+    "tgl_parsed": "2022-02-16T18:58:55Z",
+    "timestamp": "1645037935266"
+  },
+  {
+    "uuid": "b74adab0-ede1-44e6-9608-b7527551f9ce",
+    "komoditas": "GURAME",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "PURWOREJO",
+    "size": "190",
+    "price": "67000",
+    "tgl_parsed": "2022-02-16T22:02:31Z",
+    "timestamp": "1645048951321"
+  },
+  {
+    "uuid": "725de5e1-7255-46da-9d3e-60d0082461ef",
+    "komoditas": "NILA MERAH",
+    "area_provinsi": "KALIMANTAN TIMUR",
+    "area_kota": "BORNEO",
+    "size": "190",
+    "price": "40000",
+    "tgl_parsed": "2022-02-16T22:11:27Z",
+    "timestamp": "1645049487046"
+  },
+  {
+    "uuid": "0956fded-c1fc-4097-991d-fd220cee00f1",
+    "komoditas": "NILA MERAH",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "SITUBONDO",
+    "size": "200",
+    "price": "66000",
+    "tgl_parsed": "2022-02-17T21:17:22Z",
+    "timestamp": "1645132642762"
+  },
+  {
+    "uuid": "fa687de8-813d-493a-9872-31c6141c1254",
+    "komoditas": "BANDENG",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "CIREBON",
+    "size": "160",
+    "price": "55000",
+    "tgl_parsed": "2022-02-17T21:32:14Z",
+    "timestamp": "1645133534360"
+  },
+  {
+    "uuid": "5d826172-7b71-49c9-b6c5-e2b4b7a2ffa3",
+    "komoditas": "NILA MERAH",
+    "area_provinsi": "BANTEN",
+    "area_kota": "PANDEGLANG",
+    "size": "80",
+    "price": "49000",
+    "tgl_parsed": "2022-02-18T00:43:50Z",
+    "timestamp": "1645145030898"
+  },
+  {
+    "uuid": "0861a3b0-aefd-43ce-80cd-23213ba7240f",
+    "komoditas": "BANDENG",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "CILILIN",
+    "size": "130",
+    "price": "22000",
+    "tgl_parsed": "2022-02-20T03:02:45Z",
+    "timestamp": "1645326165000"
+  },
+  {
+    "uuid": "50d5602f-ac24-4048-b65e-c8dcdc6ca09f",
+    "komoditas": "BANDENG",
+    "area_provinsi": "SULAWESI BARAT",
+    "area_kota": "MAMUJU UTARA",
+    "size": "70",
+    "price": "31000",
+    "tgl_parsed": "2022-02-21T06:13:14Z",
+    "timestamp": "1645423994914"
+  },
+  {
+    "uuid": "cf185b70-db88-4ba1-9421-740cf93cd903",
+    "komoditas": "LELE",
+    "area_provinsi": "BANTEN",
+    "area_kota": "PANDEGLANG",
+    "size": "50",
+    "price": "96000",
+    "tgl_parsed": "2022-02-21T16:07:26Z",
+    "timestamp": "1645459646708"
+  },
+  {
+    "uuid": "abba042b-6eec-41de-9335-cca21efd94ba",
+    "komoditas": "MAS",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "CILILIN",
+    "size": "30",
+    "price": "91000",
+    "tgl_parsed": "2022-02-21T23:03:16Z",
+    "timestamp": "1645484596241"
+  },
+  {
+    "uuid": "255664fd-260a-42a5-b321-39971b6b0ab9",
+    "komoditas": "PATIN",
+    "area_provinsi": "KALIMANTAN TIMUR",
+    "area_kota": "BORNEO",
+    "size": "200",
+    "price": "50000",
+    "tgl_parsed": "2022-02-23T17:29:37Z",
+    "timestamp": "1645637377397"
+  },
+  {
+    "uuid": "008c4b64-ba95-4297-957a-22cd4b8c49c2",
+    "komoditas": "BANDENG",
+    "area_provinsi": "BALI",
+    "area_kota": "BULELENG",
+    "size": "180",
+    "price": "51000",
+    "tgl_parsed": "2022-02-23T18:13:57Z",
+    "timestamp": "1645640037953"
+  },
+  {
+    "uuid": "934dcb10-3563-4695-82f7-85ad66c62f72",
+    "komoditas": "LELE",
+    "area_provinsi": "SUMATERA BARAT",
+    "area_kota": "PADANG PARIAMAN",
+    "size": "80",
+    "price": "59000",
+    "tgl_parsed": "2022-02-23T21:16:29Z",
+    "timestamp": "1645650989128"
+  },
+  {
+    "uuid": "c5e7bf6a-73e6-44da-832b-304edc393339",
+    "komoditas": "BANDENG",
+    "area_provinsi": "BANTEN",
+    "area_kota": "PANDEGLANG",
+    "size": "180",
+    "price": "85000",
+    "tgl_parsed": "2022-02-24T21:51:57Z",
+    "timestamp": "1645739517614"
+  },
+  {
+    "uuid": "b5828a86-f84c-49a8-bd33-63dd4a37546a",
+    "komoditas": "GURAME",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "CILILIN",
+    "size": "140",
+    "price": "23000",
+    "tgl_parsed": "2022-02-24T22:06:21Z",
+    "timestamp": "1645740381878"
+  },
+  {
+    "uuid": "66d7ab32-976e-4f02-ad95-29ee70bfce3b",
+    "komoditas": "BAWAL",
+    "area_provinsi": "SUMATERA UTARA",
+    "area_kota": "MEDAN",
+    "size": "180",
+    "price": "95000",
+    "tgl_parsed": "2022-02-25T02:32:05Z",
+    "timestamp": "1645756325305"
+  },
+  {
+    "uuid": "92b9d467-93cd-493f-979d-5fc27646deae",
+    "komoditas": "GURAME",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "TEGAL",
+    "size": "80",
+    "price": "16000",
+    "tgl_parsed": "2022-02-25T05:19:14Z",
+    "timestamp": "1645766354680"
+  },
+  {
+    "uuid": "bec05961-9a1c-4d07-bfdf-1fc0fbdaa1f7",
+    "komoditas": "MAS",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "SITUBONDO",
+    "size": "150",
+    "price": "52000",
+    "tgl_parsed": "2022-02-25T07:06:03Z",
+    "timestamp": "1645772763480"
+  },
+  {
+    "uuid": "3de22625-b822-45fc-b2c7-444a12e23930",
+    "komoditas": "MAS",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "BANDUNG",
+    "size": "140",
+    "price": "83000",
+    "tgl_parsed": "2022-02-25T22:04:09Z",
+    "timestamp": "1645826649542"
+  },
+  {
+    "uuid": "34ab4c9c-a216-4664-ab59-624637cb1a21",
+    "komoditas": "BANDENG",
+    "area_provinsi": "ACEH",
+    "area_kota": "ACEH KOTA",
+    "size": "100",
+    "price": "19000",
+    "tgl_parsed": "2022-02-26T04:10:40Z",
+    "timestamp": "1645848640277"
+  },
+  {
+    "uuid": "f1fed630-dabf-41d3-9e77-c9933c0e5f3e",
+    "komoditas": "GURAME",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "DEPOK",
+    "size": "130",
+    "price": "16000",
+    "tgl_parsed": "2022-02-27T11:33:56Z",
+    "timestamp": "1645961636268"
+  },
+  {
+    "uuid": "9841d2c0-a2fa-4170-9970-402095367622",
+    "komoditas": "NILA MERAH",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "SITUBONDO",
+    "size": "80",
+    "price": "57000",
+    "tgl_parsed": "2022-02-27T18:06:00Z",
+    "timestamp": "1645985160850"
+  },
+  {
+    "uuid": "4926ef49-9e59-445b-b3db-6cf68a321710",
+    "komoditas": "PATIN",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "PROBOLINGGO",
+    "size": "60",
+    "price": "89000",
+    "tgl_parsed": "2022-02-28T01:54:12Z",
+    "timestamp": "1646013252861"
+  },
+  {
+    "uuid": "2773cf70-ca3a-4fd7-ad87-b4838d0baaa5",
+    "komoditas": "LELE",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "BANDUNG",
+    "size": "60",
+    "price": "88000",
+    "tgl_parsed": "2022-02-28T20:24:37Z",
+    "timestamp": "1646079877404"
+  },
+  {
+    "uuid": "68a5b164-14fb-4d95-ae4a-4eb4dae2a759",
+    "komoditas": "BANDENG",
+    "area_provinsi": "ACEH",
+    "area_kota": "ACEH KOTA",
+    "size": "190",
+    "price": "56000",
+    "tgl_parsed": "2022-03-01T16:42:17Z",
+    "timestamp": "1646152937078"
+  },
+  {
+    "uuid": "e7725573-3535-4f45-9c78-5a19c213ccc7",
+    "komoditas": "LELE",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "SITUBONDO",
+    "size": "150",
+    "price": "34000",
+    "tgl_parsed": "2022-03-02T04:55:35Z",
+    "timestamp": "1646196935008"
+  },
+  {
+    "uuid": "fa337687-886e-4229-86f0-ebe0d5ac7302",
+    "komoditas": "BAWAL",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "TEGAL",
+    "size": "130",
+    "price": "8000",
+    "tgl_parsed": "2022-03-02T20:41:51Z",
+    "timestamp": "1646253711056"
+  },
+  {
+    "uuid": "66009e98-e780-4ab4-aff1-d403443472c6",
+    "komoditas": "BAWAL",
+    "area_provinsi": "KALIMANTAN TIMUR",
+    "area_kota": "BORNEO",
+    "size": "140",
+    "price": "10000",
+    "tgl_parsed": "2022-03-02T21:45:06Z",
+    "timestamp": "1646257506907"
+  },
+  {
+    "uuid": "11e78224-5d9e-4c13-811d-2b26a9e11bd6",
+    "komoditas": "GURAME",
+    "area_provinsi": "LAMPUNG",
+    "area_kota": "LAMPUNG TIMUR",
+    "size": "160",
+    "price": "39000",
+    "tgl_parsed": "2022-03-03T08:13:49Z",
+    "timestamp": "1646295229879"
+  },
+  {
+    "uuid": "f095cc06-1ad3-40e5-9111-14f5ef76d317",
+    "komoditas": "NILA HITAM",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "CIREBON",
+    "size": "170",
+    "price": "30000",
+    "tgl_parsed": "2022-03-03T11:18:01Z",
+    "timestamp": "1646306281159"
+  },
+  {
+    "uuid": "f93a7a42-32ea-44ef-8c27-36e48d027727",
+    "komoditas": "NILA HITAM",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "PEMALANG",
+    "size": "30",
+    "price": "83000",
+    "tgl_parsed": "2022-03-04T03:20:18Z",
+    "timestamp": "1646364018748"
+  },
+  {
+    "uuid": "c2776ccf-5dea-4d52-8a9b-fc76da0d8bba",
+    "komoditas": "GURAME",
+    "area_provinsi": "BALI",
+    "area_kota": "BULELENG",
+    "size": "80",
+    "price": "28000",
+    "tgl_parsed": "2022-03-05T09:48:40Z",
+    "timestamp": "1646473720899"
+  },
+  {
+    "uuid": "5053d27e-e2a9-42bb-8813-20f1a1aed730",
+    "komoditas": "PATIN",
+    "area_provinsi": "SULAWESI BARAT",
+    "area_kota": "MAMUJU UTARA",
+    "size": "170",
+    "price": "2000",
+    "tgl_parsed": "2022-03-06T00:28:55Z",
+    "timestamp": "1646526535460"
+  },
+  {
+    "uuid": "cfed97df-97fc-4080-880d-17143a42de72",
+    "komoditas": "NILA MERAH",
+    "area_provinsi": "ACEH",
+    "area_kota": "ACEH KOTA",
+    "size": "100",
+    "price": "47000",
+    "tgl_parsed": "2022-03-07T03:18:51Z",
+    "timestamp": "1646623131530"
+  },
+  {
+    "uuid": "7723eccc-caff-4421-8e50-3710d15ad1ab",
+    "komoditas": "GURAME",
+    "area_provinsi": "SULAWESI BARAT",
+    "area_kota": "MAMUJU UTARA",
+    "size": "170",
+    "price": "11000",
+    "tgl_parsed": "2022-03-09T08:34:14Z",
+    "timestamp": "1646814854353"
+  },
+  {
+    "uuid": "cca9c72b-5d42-497d-baff-282a60bac681",
+    "komoditas": "GURAME",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "CIMAHI",
+    "size": "80",
+    "price": "87000",
+    "tgl_parsed": "2022-03-10T07:28:36Z",
+    "timestamp": "1646897316401"
+  },
+  {
+    "uuid": "fe50f15e-2c28-4aad-add0-3cd0b2a3247e",
+    "komoditas": "BANDENG",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "PEMALANG",
+    "size": "160",
+    "price": "74000",
+    "tgl_parsed": "2022-03-10T16:05:08Z",
+    "timestamp": "1646928308494"
+  },
+  {
+    "uuid": "84139cab-dfe1-46d0-99c5-6bec4df10187",
+    "komoditas": "NILA HITAM",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "CILILIN",
+    "size": "150",
+    "price": "47000",
+    "tgl_parsed": "2022-03-10T21:36:05Z",
+    "timestamp": "1646948165340"
+  },
+  {
+    "uuid": "8da02970-a7fa-4614-9d85-bbfe37266a95",
+    "komoditas": "LELE",
+    "area_provinsi": "ACEH",
+    "area_kota": "ACEH KOTA",
+    "size": "30",
+    "price": "82000",
+    "tgl_parsed": "2022-03-11T18:30:46Z",
+    "timestamp": "1647023446190"
+  },
+  {
+    "uuid": "3d191f6d-19dc-4dc2-809b-5f4c58ec8a1b",
+    "komoditas": "BAWAL",
+    "area_provinsi": "ACEH",
+    "area_kota": "ACEH KOTA",
+    "size": "200",
+    "price": "65000",
+    "tgl_parsed": "2022-03-12T00:50:19Z",
+    "timestamp": "1647046219453"
+  },
+  {
+    "uuid": "ed7f2f41-753c-4097-88d6-ef0e8fae66d1",
+    "komoditas": "MAS",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "PROBOLINGGO",
+    "size": "140",
+    "price": "32000",
+    "tgl_parsed": "2022-03-12T03:24:40Z",
+    "timestamp": "1647055480546"
+  },
+  {
+    "uuid": "22324495-db90-4fb0-8fdf-76cbe74b8ba5",
+    "komoditas": "BANDENG",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "PEMALANG",
+    "size": "120",
+    "price": "30000",
+    "tgl_parsed": "2022-03-12T11:37:28Z",
+    "timestamp": "1647085048143"
+  },
+  {
+    "uuid": "6df87269-488f-4905-ab93-f3180dbafe25",
+    "komoditas": "BANDENG",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "CIREBON",
+    "size": "50",
+    "price": "24000",
+    "tgl_parsed": "2022-03-13T20:35:46Z",
+    "timestamp": "1647203746403"
+  },
+  {
+    "uuid": "4456270e-e9c5-4799-819e-3dacbcb68d08",
+    "komoditas": "GURAME",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "BANDUNG",
+    "size": "180",
+    "price": "19000",
+    "tgl_parsed": "2022-03-14T07:01:13Z",
+    "timestamp": "1647241273597"
+  },
+  {
+    "uuid": "ebc06fd7-e11d-4fce-96a0-5a08427f6193",
+    "komoditas": "LELE",
+    "area_provinsi": "BANTEN",
+    "area_kota": "PANDEGLANG",
+    "size": "190",
+    "price": "6000",
+    "tgl_parsed": "2022-03-15T00:06:39Z",
+    "timestamp": "1647302799558"
+  },
+  {
+    "uuid": "2528ebab-52a8-486c-a8fc-cb1103e9468a",
+    "komoditas": "BANDENG",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "BANDUNG",
+    "size": "190",
+    "price": "61000",
+    "tgl_parsed": "2022-03-15T22:54:05Z",
+    "timestamp": "1647384845094"
+  },
+  {
+    "uuid": "cfa286f7-e174-424b-b080-0698ccefe270",
+    "komoditas": "NILA HITAM",
+    "area_provinsi": "LAMPUNG",
+    "area_kota": "LAMPUNG TIMUR",
+    "size": "140",
+    "price": "6000",
+    "tgl_parsed": "2022-03-17T17:53:09Z",
+    "timestamp": "1647539589224"
+  },
+  {
+    "uuid": "8460be3e-e91c-442a-8d34-6fbb24148dce",
+    "komoditas": "BANDENG",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "BANYUWANGI",
+    "size": "200",
+    "price": "74000",
+    "tgl_parsed": "2022-03-17T18:35:23Z",
+    "timestamp": "1647542123889"
+  },
+  {
+    "uuid": "3ca74e46-32c0-4917-a8a3-f83cbff3947d",
+    "komoditas": "NILA MERAH",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "TEGAL",
+    "size": "180",
+    "price": "29000",
+    "tgl_parsed": "2022-03-18T02:45:27Z",
+    "timestamp": "1647571527913"
+  },
+  {
+    "uuid": "6bca16fd-ca32-4874-affe-4cf100617df8",
+    "komoditas": "BAWAL",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "CILACAP",
+    "size": "190",
+    "price": "81000",
+    "tgl_parsed": "2022-03-18T18:32:44Z",
+    "timestamp": "1647628364648"
+  },
+  {
+    "uuid": "ab27db6d-ba04-4bde-bcc2-3a1d238fbfea",
+    "komoditas": "NILA MERAH",
+    "area_provinsi": "BANTEN",
+    "area_kota": "PANDEGLANG",
+    "size": "150",
+    "price": "40000",
+    "tgl_parsed": "2022-03-19T12:18:49Z",
+    "timestamp": "1647692329725"
+  },
+  {
+    "uuid": "5b76c751-c47f-4a90-8f8a-f44244145ccf",
+    "komoditas": "GURAME",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "BANYUWANGI",
+    "size": "200",
+    "price": "11000",
+    "tgl_parsed": "2022-03-19T23:49:20Z",
+    "timestamp": "1647733760917"
+  },
+  {
+    "uuid": "b8039629-3aba-4f7d-b7f0-7594af307938",
+    "komoditas": "GURAME",
+    "area_provinsi": "LAMPUNG",
+    "area_kota": "LAMPUNG TIMUR",
+    "size": "140",
+    "price": "72000",
+    "tgl_parsed": "2022-03-20T23:32:32Z",
+    "timestamp": "1647819152153"
+  },
+  {
+    "uuid": "3ace62b4-8322-4c70-aa33-196aa9a3b2af",
+    "komoditas": "LELE",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "BANYUWANGI",
+    "size": "60",
+    "price": "29000",
+    "tgl_parsed": "2022-03-21T04:10:02Z",
+    "timestamp": "1647835802634"
+  },
+  {
+    "uuid": "ada81484-c07f-4373-851f-b03b3004e009",
+    "komoditas": "BANDENG",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "DEPOK",
+    "size": "70",
+    "price": "91000",
+    "tgl_parsed": "2022-03-22T06:53:37Z",
+    "timestamp": "1647932017991"
+  },
+  {
+    "uuid": "4ae634db-3d05-42c4-9f05-f04bf40773d9",
+    "komoditas": "GURAME",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "JEMBER",
+    "size": "200",
+    "price": "23000",
+    "tgl_parsed": "2022-03-22T07:41:22Z",
+    "timestamp": "1647934882515"
+  },
+  {
+    "uuid": "d1988716-cee5-42a9-bed0-0706076a6579",
+    "komoditas": "MAS",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "PEMALANG",
+    "size": "170",
+    "price": "63000",
+    "tgl_parsed": "2022-03-22T11:46:54Z",
+    "timestamp": "1647949614553"
+  },
+  {
+    "uuid": "396be000-c777-444a-8f3c-d08959789102",
+    "komoditas": "NILA HITAM",
+    "area_provinsi": "ACEH",
+    "area_kota": "ACEH KOTA",
+    "size": "200",
+    "price": "1000",
+    "tgl_parsed": "2022-03-23T08:49:05Z",
+    "timestamp": "1648025345888"
+  },
+  {
+    "uuid": "b081c7e1-5c0b-435d-938f-0af974f7f071",
+    "komoditas": "PATIN",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "CILACAP",
+    "size": "60",
+    "price": "30000",
+    "tgl_parsed": "2022-03-23T23:59:50Z",
+    "timestamp": "1648079990961"
+  },
+  {
+    "uuid": "1190bb2f-ff48-484f-91bd-f344c1d3ad8d",
+    "komoditas": "LELE",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "CILILIN",
+    "size": "190",
+    "price": "84000",
+    "tgl_parsed": "2022-03-24T17:14:08Z",
+    "timestamp": "1648142048389"
+  },
+  {
+    "uuid": "9ff3af63-9724-4dbb-a00d-77a811fe8756",
+    "komoditas": "PATIN",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "PURWOREJO",
+    "size": "100",
+    "price": "90000",
+    "tgl_parsed": "2022-03-26T01:28:58Z",
+    "timestamp": "1648258138775"
+  },
+  {
+    "uuid": "7438c3d9-3c49-4649-a579-f23dc8e7b784",
+    "komoditas": "BANDENG",
+    "area_provinsi": "KALIMANTAN TIMUR",
+    "area_kota": "BORNEO",
+    "size": "180",
+    "price": "65000",
+    "tgl_parsed": "2022-03-26T06:39:52Z",
+    "timestamp": "1648276792365"
+  },
+  {
+    "uuid": "e163dfef-edb6-4a5a-9648-59d2eea1f6c3",
+    "komoditas": "LELE",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "PEMALANG",
+    "size": "200",
+    "price": "46000",
+    "tgl_parsed": "2022-03-26T13:40:22Z",
+    "timestamp": "1648302022797"
+  },
+  {
+    "uuid": "ddd7b0bf-735a-4612-a62d-b44f3c58c24f",
+    "komoditas": "PATIN",
+    "area_provinsi": "LAMPUNG",
+    "area_kota": "LAMPUNG TIMUR",
+    "size": "30",
+    "price": "41000",
+    "tgl_parsed": "2022-03-26T17:29:53Z",
+    "timestamp": "1648315793077"
+  },
+  {
+    "uuid": "7e0db4e3-36af-400c-aad5-86a877fa1a17",
+    "komoditas": "NILA MERAH",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "BANDUNG",
+    "size": "50",
+    "price": "43000",
+    "tgl_parsed": "2022-03-26T23:39:27Z",
+    "timestamp": "1648337967553"
+  },
+  {
+    "uuid": "858e90aa-95bf-4fd1-98a2-061b65dbbfbc",
+    "komoditas": "GURAME",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "PROBOLINGGO",
+    "size": "160",
+    "price": "76000",
+    "tgl_parsed": "2022-03-28T10:29:31Z",
+    "timestamp": "1648463371003"
+  },
+  {
+    "uuid": "08957dbd-2dd8-4b6d-bb88-0122ecb33c0f",
+    "komoditas": "NILA MERAH",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "SITUBONDO",
+    "size": "200",
+    "price": "21000",
+    "tgl_parsed": "2022-03-29T05:29:53Z",
+    "timestamp": "1648531793460"
+  },
+  {
+    "uuid": "c03de0fd-b92e-4855-8b6f-c316a904d38a",
+    "komoditas": "NILA HITAM",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "CILILIN",
+    "size": "100",
+    "price": "84000",
+    "tgl_parsed": "2022-03-29T20:35:36Z",
+    "timestamp": "1648586136542"
+  },
+  {
+    "uuid": "0d7d7eaf-00c5-498d-bf0e-474e8b76a9e2",
+    "komoditas": "GURAME",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "CIREBON",
+    "size": "30",
+    "price": "33000",
+    "tgl_parsed": "2022-03-30T09:42:53Z",
+    "timestamp": "1648633373243"
+  },
+  {
+    "uuid": "b91fe845-8f67-4b69-ad6e-3c90529fc529",
+    "komoditas": "PATIN",
+    "area_provinsi": "KALIMANTAN TIMUR",
+    "area_kota": "BORNEO",
+    "size": "90",
+    "price": "84000",
+    "tgl_parsed": "2022-03-30T11:38:02Z",
+    "timestamp": "1648640282816"
+  },
+  {
+    "uuid": "51c07dc8-4c1b-42bf-b36d-7cc64ace95a4",
+    "komoditas": "GURAME",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "CILILIN",
+    "size": "160",
+    "price": "22000",
+    "tgl_parsed": "2022-03-31T00:54:17Z",
+    "timestamp": "1648688057256"
+  },
+  {
+    "uuid": "b0bae8a3-0076-49bb-ade0-7ecc5bbfed61",
+    "komoditas": "BANDENG",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "CIMAHI",
+    "size": "180",
+    "price": "94000",
+    "tgl_parsed": "2022-03-31T11:11:23Z",
+    "timestamp": "1648725083034"
+  },
+  {
+    "uuid": "d6854ccf-f55a-40b0-973a-2a5f49e2baba",
+    "komoditas": "GURAME",
+    "area_provinsi": "KALIMANTAN TIMUR",
+    "area_kota": "BORNEO",
+    "size": "90",
+    "price": "79000",
+    "tgl_parsed": "2022-03-31T16:12:56Z",
+    "timestamp": "1648743176495"
+  },
+  {
+    "uuid": "5a349504-19db-48d4-b149-56b289e1b3a1",
+    "komoditas": "BAWAL",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "CILACAP",
+    "size": "140",
+    "price": "54000",
+    "tgl_parsed": "2022-04-01T11:58:36Z",
+    "timestamp": "1648814316379"
+  },
+  {
+    "uuid": "856a6841-d845-4763-aef9-a81555a7b141",
+    "komoditas": "BANDENG",
+    "area_provinsi": "BANTEN",
+    "area_kota": "PANDEGLANG",
+    "size": "180",
+    "price": "20000",
+    "tgl_parsed": "2022-04-02T14:36:18Z",
+    "timestamp": "1648910178726"
+  },
+  {
+    "uuid": "4a8e5c90-fa1e-43c8-b0da-52eab753b763",
+    "komoditas": "NILA HITAM",
+    "area_provinsi": "SUMATERA UTARA",
+    "area_kota": "MEDAN",
+    "size": "30",
+    "price": "17000",
+    "tgl_parsed": "2022-04-02T14:50:30Z",
+    "timestamp": "1648911030386"
+  },
+  {
+    "uuid": "1c746910-1bbd-4a5e-b562-b88ed2bedda5",
+    "komoditas": "MAS",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "BANDUNG",
+    "size": "30",
+    "price": "96000",
+    "tgl_parsed": "2022-04-03T02:47:26Z",
+    "timestamp": "1648954046097"
+  },
+  {
+    "uuid": "f4348cdc-43b5-4941-b6ed-0e207ff33899",
+    "komoditas": "BANDENG",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "CILILIN",
+    "size": "80",
+    "price": "26000",
+    "tgl_parsed": "2022-04-03T21:21:57Z",
+    "timestamp": "1649020917923"
+  },
+  {
+    "uuid": "6832fde2-612d-49c5-9ce6-2484529ad2c1",
+    "komoditas": "GURAME",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "TEGAL",
+    "size": "80",
+    "price": "15000",
+    "tgl_parsed": "2022-04-05T15:09:27Z",
+    "timestamp": "1649171367462"
+  },
+  {
+    "uuid": "7eab6ed5-dfda-4182-97ef-92864a84484e",
+    "komoditas": "BANDENG",
+    "area_provinsi": "ACEH",
+    "area_kota": "ACEH KOTA",
+    "size": "180",
+    "price": "12000",
+    "tgl_parsed": "2022-04-06T20:03:13Z",
+    "timestamp": "1649275393021"
+  },
+  {
+    "uuid": "2ed44ad9-cedd-4855-981c-5210d1b93810",
+    "komoditas": "NILA HITAM",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "CILACAP",
+    "size": "70",
+    "price": "46000",
+    "tgl_parsed": "2022-04-07T01:44:00Z",
+    "timestamp": "1649295840680"
+  },
+  {
+    "uuid": "d3cdd755-b9db-4d8a-94e4-3a624f4d680b",
+    "komoditas": "LELE",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "DEPOK",
+    "size": "190",
+    "price": "70000",
+    "tgl_parsed": "2022-04-07T10:58:28Z",
+    "timestamp": "1649329108869"
+  },
+  {
+    "uuid": "701e5189-9638-4ea9-ac87-a034f11c6cec",
+    "komoditas": "NILA HITAM",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "CIMAHI",
+    "size": "100",
+    "price": "74000",
+    "tgl_parsed": "2022-04-08T09:24:07Z",
+    "timestamp": "1649409847197"
+  },
+  {
+    "uuid": "524fbab3-a207-4335-9e9c-47115b28eb0f",
+    "komoditas": "GURAME",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "CILACAP",
+    "size": "90",
+    "price": "45000",
+    "tgl_parsed": "2022-04-08T22:54:31Z",
+    "timestamp": "1649458471916"
+  },
+  {
+    "uuid": "98d80486-b21e-4ea0-b140-7299c4803ea0",
+    "komoditas": "MAS",
+    "area_provinsi": "BANTEN",
+    "area_kota": "PANDEGLANG",
+    "size": "190",
+    "price": "10000",
+    "tgl_parsed": "2022-04-09T10:41:04Z",
+    "timestamp": "1649500864895"
+  },
+  {
+    "uuid": "9b37d9a0-5804-491a-bb41-749cb89b82de",
+    "komoditas": "BANDENG",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "CIREBON",
+    "size": "180",
+    "price": "47000",
+    "tgl_parsed": "2022-04-10T02:47:46Z",
+    "timestamp": "1649558866532"
+  },
+  {
+    "uuid": "ae8f3920-048b-4afd-9ee8-935025128c90",
+    "komoditas": "NILA MERAH",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "PROBOLINGGO",
+    "size": "70",
+    "price": "52000",
+    "tgl_parsed": "2022-04-13T06:28:10Z",
+    "timestamp": "1649831290107"
+  },
+  {
+    "uuid": "49e07941-835c-4990-a6ae-c6d51e1c477b",
+    "komoditas": "PATIN",
+    "area_provinsi": "KALIMANTAN TIMUR",
+    "area_kota": "BORNEO",
+    "size": "80",
+    "price": "22000",
+    "tgl_parsed": "2022-04-13T08:19:18Z",
+    "timestamp": "1649837958660"
+  },
+  {
+    "uuid": "57fda397-429f-4a6f-8e4a-6d290e8a08e4",
+    "komoditas": "BANDENG",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "BANYUWANGI",
+    "size": "30",
+    "price": "62000",
+    "tgl_parsed": "2022-04-13T11:26:54Z",
+    "timestamp": "1649849214257"
+  },
+  {
+    "uuid": "e8b2a1d3-783e-471f-b49a-dafba6f08c75",
+    "komoditas": "PATIN",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "TEGAL",
+    "size": "120",
+    "price": "41000",
+    "tgl_parsed": "2022-04-14T00:44:24Z",
+    "timestamp": "1649897064724"
+  },
+  {
+    "uuid": "66f37460-13e9-4fda-b851-6ed9e7f99bc9",
+    "komoditas": "NILA HITAM",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "CIMAHI",
+    "size": "150",
+    "price": "33000",
+    "tgl_parsed": "2022-04-16T05:49:07Z",
+    "timestamp": "1650088147608"
+  },
+  {
+    "uuid": "97e2d004-0fee-407c-b65d-66994db6a2c0",
+    "komoditas": "BANDENG",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "SITUBONDO",
+    "size": "200",
+    "price": "67000",
+    "tgl_parsed": "2022-04-16T07:26:02Z",
+    "timestamp": "1650093962176"
+  },
+  {
+    "uuid": "0e7807aa-ee20-4d0f-8822-b482485b711b",
+    "komoditas": "BANDENG",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "DEPOK",
+    "size": "170",
+    "price": "62000",
+    "tgl_parsed": "2022-04-16T23:03:27Z",
+    "timestamp": "1650150207586"
+  },
+  {
+    "uuid": "b9356cb8-dfe5-458e-95e1-cf233ca011d3",
+    "komoditas": "NILA MERAH",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "CIMAHI",
+    "size": "80",
+    "price": "63000",
+    "tgl_parsed": "2022-04-17T07:35:45Z",
+    "timestamp": "1650180945118"
+  },
+  {
+    "uuid": "ae428017-79b0-49d4-8cf1-c767a837be74",
+    "komoditas": "BANDENG",
+    "area_provinsi": "DKI JAKARTA",
+    "area_kota": "KOTA TUA",
+    "size": "40",
+    "price": "96000",
+    "tgl_parsed": "2022-04-19T12:54:50Z",
+    "timestamp": "1650372890028"
+  },
+  {
+    "uuid": "a6ee2235-61ec-4a9a-aa3c-0f0220d95bb3",
+    "komoditas": "BANDENG",
+    "area_provinsi": "SUMATERA UTARA",
+    "area_kota": "MEDAN",
+    "size": "30",
+    "price": "83000",
+    "tgl_parsed": "2022-04-19T15:30:26Z",
+    "timestamp": "1650382226284"
+  },
+  {
+    "uuid": "5daf04de-3836-4f1d-8e4a-6148a86329e6",
+    "komoditas": "MAS",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "SITUBONDO",
+    "size": "180",
+    "price": "98000",
+    "tgl_parsed": "2022-04-20T19:48:30Z",
+    "timestamp": "1650484110116"
+  },
+  {
+    "uuid": "1e39b1a4-6d75-4f40-a7f6-5b720ee3f9de",
+    "komoditas": "MAS",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "JEMBER",
+    "size": "140",
+    "price": "4000",
+    "tgl_parsed": "2022-04-20T21:42:51Z",
+    "timestamp": "1650490971901"
+  },
+  {
+    "uuid": "96d1191a-4182-4b33-b219-a52a4f1baf4c",
+    "komoditas": "GURAME",
+    "area_provinsi": "SUMATERA UTARA",
+    "area_kota": "MEDAN",
+    "size": "110",
+    "price": "34000",
+    "tgl_parsed": "2022-04-21T08:20:07Z",
+    "timestamp": "1650529207198"
+  },
+  {
+    "uuid": "a2fb64e2-dd0d-4b85-be95-d5d90d662eda",
+    "komoditas": "BAWAL",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "TEGAL",
+    "size": "60",
+    "price": "41000",
+    "tgl_parsed": "2022-04-21T23:21:25Z",
+    "timestamp": "1650583285598"
+  },
+  {
+    "uuid": "7bde323e-3b50-4e16-80b5-aff6ddbb76ab",
+    "komoditas": "BAWAL",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "CILILIN",
+    "size": "180",
+    "price": "7000",
+    "tgl_parsed": "2022-04-22T15:51:26Z",
+    "timestamp": "1650642686796"
+  },
+  {
+    "uuid": "a37905f3-04e0-4fc8-bde4-a0bac11cc1de",
+    "komoditas": "PATIN",
+    "area_provinsi": "BANTEN",
+    "area_kota": "PANDEGLANG",
+    "size": "190",
+    "price": "44000",
+    "tgl_parsed": "2022-04-23T03:22:49Z",
+    "timestamp": "1650684169844"
+  },
+  {
+    "uuid": "88a87a1f-57ce-44ed-88d3-8a020d876a14",
+    "komoditas": "NILA HITAM",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "DEPOK",
+    "size": "30",
+    "price": "71000",
+    "tgl_parsed": "2022-04-23T07:38:34Z",
+    "timestamp": "1650699514263"
+  },
+  {
+    "uuid": "773f1710-5ee9-46b7-a6f8-5c244f1d6cba",
+    "komoditas": "BANDENG",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "BANYUWANGI",
+    "size": "100",
+    "price": "38000",
+    "tgl_parsed": "2022-04-23T14:14:25Z",
+    "timestamp": "1650723265902"
+  },
+  {
+    "uuid": "029e19f2-086e-40df-aae8-eb10c656f1d0",
+    "komoditas": "BANDENG",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "CIMAHI",
+    "size": "180",
+    "price": "28000",
+    "tgl_parsed": "2022-04-23T16:55:45Z",
+    "timestamp": "1650732945893"
+  },
+  {
+    "uuid": "70f56de1-b588-4e44-94b1-16ef366c90f5",
+    "komoditas": "NILA MERAH",
+    "area_provinsi": "LAMPUNG",
+    "area_kota": "LAMPUNG TIMUR",
+    "size": "90",
+    "price": "57000",
+    "tgl_parsed": "2022-04-24T08:18:02Z",
+    "timestamp": "1650788282733"
+  },
+  {
+    "uuid": "8dea3fa5-f6b3-4771-974f-34b3ff020a39",
+    "komoditas": "GURAME",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "DEPOK",
+    "size": "190",
+    "price": "36000",
+    "tgl_parsed": "2022-04-24T18:56:47Z",
+    "timestamp": "1650826607200"
+  },
+  {
+    "uuid": "b00285e1-6af8-42ab-865d-55830ab3d11a",
+    "komoditas": "LELE",
+    "area_provinsi": "SULAWESI BARAT",
+    "area_kota": "MAMUJU UTARA",
+    "size": "180",
+    "price": "83000",
+    "tgl_parsed": "2022-04-25T00:04:26Z",
+    "timestamp": "1650845066839"
+  },
+  {
+    "uuid": "4615dcde-dfcb-49d7-b327-061ed79b8d10",
+    "komoditas": "GURAME",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "PROBOLINGGO",
+    "size": "100",
+    "price": "14000",
+    "tgl_parsed": "2022-04-26T04:50:52Z",
+    "timestamp": "1650948652469"
+  },
+  {
+    "uuid": "b6b3d1ab-fcb3-4041-a29d-6c803616768c",
+    "komoditas": "BAWAL",
+    "area_provinsi": "SUMATERA UTARA",
+    "area_kota": "MEDAN",
+    "size": "90",
+    "price": "26000",
+    "tgl_parsed": "2022-04-26T10:53:08Z",
+    "timestamp": "1650970388939"
+  },
+  {
+    "uuid": "bbbc9ced-01ff-4949-9885-1efaf221570d",
+    "komoditas": "BANDENG",
+    "area_provinsi": "ACEH",
+    "area_kota": "ACEH KOTA",
+    "size": "60",
+    "price": "80000",
+    "tgl_parsed": "2022-04-28T21:10:32Z",
+    "timestamp": "1651180232590"
+  },
+  {
+    "uuid": "d4d26386-4262-4a23-9de1-d91a78602005",
+    "komoditas": "GURAME",
+    "area_provinsi": "SULAWESI BARAT",
+    "area_kota": "MAMUJU UTARA",
+    "size": "50",
+    "price": "65000",
+    "tgl_parsed": "2022-04-28T23:33:10Z",
+    "timestamp": "1651188790283"
+  },
+  {
+    "uuid": "1f3f3a47-e5ac-4fb9-9132-95e325eeff91",
+    "komoditas": "MAS",
+    "area_provinsi": "BALI",
+    "area_kota": "BULELENG",
+    "size": "90",
+    "price": "86000",
+    "tgl_parsed": "2022-05-01T10:59:26Z",
+    "timestamp": "1651402766323"
+  },
+  {
+    "uuid": "cadfffc0-b0d8-45e6-8eeb-f0f5aa62a925",
+    "komoditas": "NILA MERAH",
+    "area_provinsi": "BALI",
+    "area_kota": "BULELENG",
+    "size": "30",
+    "price": "65000",
+    "tgl_parsed": "2022-05-02T02:08:55Z",
+    "timestamp": "1651457335576"
+  },
+  {
+    "uuid": "b2a1df90-3ed6-42f5-b12d-76d71d906165",
+    "komoditas": "NILA HITAM",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "SITUBONDO",
+    "size": "130",
+    "price": "53000",
+    "tgl_parsed": "2022-05-02T03:07:29Z",
+    "timestamp": "1651460849430"
+  },
+  {
+    "uuid": "b3d9b873-bab4-42c6-8805-599b297ec432",
+    "komoditas": "GURAME",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "DEPOK",
+    "size": "100",
+    "price": "17000",
+    "tgl_parsed": "2022-05-04T09:36:11Z",
+    "timestamp": "1651656971379"
+  },
+  {
+    "uuid": "c446a5f3-7e93-45ca-aefd-541ff746d114",
+    "komoditas": "NILA MERAH",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "CILILIN",
+    "size": "40",
+    "price": "35000",
+    "tgl_parsed": "2022-05-04T17:57:34Z",
+    "timestamp": "1651687054896"
+  },
+  {
+    "uuid": "81c2b79e-d3c2-4b90-8858-8a4d7d115c22",
+    "komoditas": "GURAME",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "JEMBER",
+    "size": "190",
+    "price": "82000",
+    "tgl_parsed": "2022-05-04T22:17:26Z",
+    "timestamp": "1651702646925"
+  },
+  {
+    "uuid": "e9de2e00-470c-4005-97f6-570088a6941b",
+    "komoditas": "BAWAL",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "TEGAL",
+    "size": "30",
+    "price": "87000",
+    "tgl_parsed": "2022-05-05T10:04:23Z",
+    "timestamp": "1651745063781"
+  },
+  {
+    "uuid": "06f8ca21-2e32-42b8-8ab7-17be3c1a5346",
+    "komoditas": "NILA MERAH",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "SITUBONDO",
+    "size": "30",
+    "price": "11000",
+    "tgl_parsed": "2022-05-05T17:34:16Z",
+    "timestamp": "1651772056764"
+  },
+  {
+    "uuid": "4dd64d05-995b-4a57-a34a-760dadaf05ff",
+    "komoditas": "PATIN",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "PEMALANG",
+    "size": "40",
+    "price": "22000",
+    "tgl_parsed": "2022-05-05T22:40:29Z",
+    "timestamp": "1651790429615"
+  },
+  {
+    "uuid": "ac780a17-2ca8-4f65-929c-83749ba7e3c9",
+    "komoditas": "BAWAL",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "SITUBONDO",
+    "size": "80",
+    "price": "69000",
+    "tgl_parsed": "2022-05-06T18:28:29Z",
+    "timestamp": "1651861709551"
+  },
+  {
+    "uuid": "33b07219-157b-407e-8794-cc631960f300",
+    "komoditas": "BANDENG",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "CILACAP",
+    "size": "140",
+    "price": "35000",
+    "tgl_parsed": "2022-05-07T01:15:21Z",
+    "timestamp": "1651886121194"
+  },
+  {
+    "uuid": "5f2231fa-7f0a-4016-ac48-eda97222b3cd",
+    "komoditas": "BAWAL",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "SITUBONDO",
+    "size": "200",
+    "price": "15000",
+    "tgl_parsed": "2022-05-07T19:13:51Z",
+    "timestamp": "1651950831337"
+  },
+  {
+    "uuid": "fc931f47-1c2c-4f97-9641-76478858453b",
+    "komoditas": "BANDENG",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "BANDUNG",
+    "size": "150",
+    "price": "27000",
+    "tgl_parsed": "2022-05-09T04:09:34Z",
+    "timestamp": "1652069374226"
+  },
+  {
+    "uuid": "48155218-f3bf-490d-8eeb-4d84e600e3a5",
+    "komoditas": "BANDENG",
+    "area_provinsi": "SUMATERA BARAT",
+    "area_kota": "PADANG PARIAMAN",
+    "size": "100",
+    "price": "62000",
+    "tgl_parsed": "2022-05-11T10:17:32Z",
+    "timestamp": "1652264252971"
+  },
+  {
+    "uuid": "7b7fdd8b-4237-4ec9-889b-34b0df94e5bf",
+    "komoditas": "NILA HITAM",
+    "area_provinsi": "ACEH",
+    "area_kota": "ACEH KOTA",
+    "size": "160",
+    "price": "91000",
+    "tgl_parsed": "2022-05-11T15:07:17Z",
+    "timestamp": "1652281637955"
+  },
+  {
+    "uuid": "088aaaa6-8969-49b5-8b35-11d5bd0b946e",
+    "komoditas": "BAWAL",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "PEMALANG",
+    "size": "60",
+    "price": "87000",
+    "tgl_parsed": "2022-05-13T13:40:08Z",
+    "timestamp": "1652449208282"
+  },
+  {
+    "uuid": "9eabffb1-de90-4c81-abf5-d6892fe07697",
+    "komoditas": "BANDENG",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "BANDUNG",
+    "size": "100",
+    "price": "88000",
+    "tgl_parsed": "2022-05-14T02:12:43Z",
+    "timestamp": "1652494363214"
+  },
+  {
+    "uuid": "3e085e94-3e32-4f6d-b452-ffdbf0a1e312",
+    "komoditas": "MAS",
+    "area_provinsi": "LAMPUNG",
+    "area_kota": "LAMPUNG TIMUR",
+    "size": "190",
+    "price": "99000",
+    "tgl_parsed": "2022-05-14T13:49:05Z",
+    "timestamp": "1652536145659"
+  },
+  {
+    "uuid": "f0c1e5d4-13f0-4ee5-b5ae-30bf74f9aa87",
+    "komoditas": "BAWAL",
+    "area_provinsi": "SUMATERA UTARA",
+    "area_kota": "MEDAN",
+    "size": "80",
+    "price": "72000",
+    "tgl_parsed": "2022-05-14T15:35:46Z",
+    "timestamp": "1652542546602"
+  },
+  {
+    "uuid": "aa7de45e-bde5-439b-aed4-91fa503ced42",
+    "komoditas": "NILA HITAM",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "CIREBON",
+    "size": "180",
+    "price": "51000",
+    "tgl_parsed": "2022-05-15T20:43:37Z",
+    "timestamp": "1652647417465"
+  },
+  {
+    "uuid": "9e41fd25-b043-4c43-894a-9e8283fee55c",
+    "komoditas": "GURAME",
+    "area_provinsi": "SULAWESI BARAT",
+    "area_kota": "MAMUJU UTARA",
+    "size": "90",
+    "price": "82000",
+    "tgl_parsed": "2022-05-16T18:34:59Z",
+    "timestamp": "1652726099709"
+  },
+  {
+    "uuid": "323ea1dd-1886-4e75-a4a1-f824227e2a88",
+    "komoditas": "PATIN",
+    "area_provinsi": "SUMATERA UTARA",
+    "area_kota": "MEDAN",
+    "size": "40",
+    "price": "68000",
+    "tgl_parsed": "2022-05-17T16:33:52Z",
+    "timestamp": "1652805232092"
+  },
+  {
+    "uuid": "a4a545e6-07c0-45bc-9e8f-aafc0abc5caf",
+    "komoditas": "BAWAL",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "BANDUNG",
+    "size": "90",
+    "price": "13000",
+    "tgl_parsed": "2022-05-18T02:17:58Z",
+    "timestamp": "1652840278406"
+  },
+  {
+    "uuid": "a7c6e5eb-0dcc-4a63-8969-a9e52452fc33",
+    "komoditas": "BANDENG",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "DEPOK",
+    "size": "60",
+    "price": "53000",
+    "tgl_parsed": "2022-05-19T04:01:03Z",
+    "timestamp": "1652932863798"
+  },
+  {
+    "uuid": "3197b684-5f56-4989-b265-b2a404e6f268",
+    "komoditas": "PATIN",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "TEGAL",
+    "size": "140",
+    "price": "99000",
+    "tgl_parsed": "2022-05-19T08:34:22Z",
+    "timestamp": "1652949262530"
+  },
+  {
+    "uuid": "99696e6f-6724-4298-bfbf-d58931d3498e",
+    "komoditas": "GURAME",
+    "area_provinsi": "KALIMANTAN TIMUR",
+    "area_kota": "BORNEO",
+    "size": "30",
+    "price": "72000",
+    "tgl_parsed": "2022-05-20T00:29:44Z",
+    "timestamp": "1653006584247"
+  },
+  {
+    "uuid": "58e118a0-29c2-47ab-978c-7176a6fcc1d6",
+    "komoditas": "NILA HITAM",
+    "area_provinsi": "DKI JAKARTA",
+    "area_kota": "KOTA TUA",
+    "size": "70",
+    "price": "22000",
+    "tgl_parsed": "2022-05-20T02:56:40Z",
+    "timestamp": "1653015400220"
+  },
+  {
+    "uuid": "f3bc3c64-24c5-4512-ae75-b09cfd0ab277",
+    "komoditas": "BANDENG",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "TEGAL",
+    "size": "90",
+    "price": "81000",
+    "tgl_parsed": "2022-05-20T18:38:51Z",
+    "timestamp": "1653071931150"
+  },
+  {
+    "uuid": "9921cb6d-ff8d-4322-881d-f20d858b7f58",
+    "komoditas": "BANDENG",
+    "area_provinsi": "ACEH",
+    "area_kota": "ACEH KOTA",
+    "size": "30",
+    "price": "54000",
+    "tgl_parsed": "2022-05-21T10:36:55Z",
+    "timestamp": "1653129415853"
+  },
+  {
+    "uuid": "ab1362a6-b727-4ad9-a6f8-60ff2ec50d5b",
+    "komoditas": "BAWAL",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "CIMAHI",
+    "size": "190",
+    "price": "99000",
+    "tgl_parsed": "2022-05-21T11:16:39Z",
+    "timestamp": "1653131799059"
+  },
+  {
+    "uuid": "6b0ca597-b8f0-4563-96a6-629993d2bafa",
+    "komoditas": "NILA MERAH",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "PROBOLINGGO",
+    "size": "200",
+    "price": "88000",
+    "tgl_parsed": "2022-05-22T05:01:41Z",
+    "timestamp": "1653195701274"
+  },
+  {
+    "uuid": "08cdae63-11c8-4537-987a-c88b8085ec3c",
+    "komoditas": "LELE",
+    "area_provinsi": "BALI",
+    "area_kota": "BULELENG",
+    "size": "150",
+    "price": "62000",
+    "tgl_parsed": "2022-05-23T08:56:51Z",
+    "timestamp": "1653296211237"
+  },
+  {
+    "uuid": "fb1ff489-bcf2-403e-bbd0-4c006ad9bdff",
+    "komoditas": "LELE",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "SITUBONDO",
+    "size": "170",
+    "price": "60000",
+    "tgl_parsed": "2022-05-24T07:34:22Z",
+    "timestamp": "1653377662396"
+  },
+  {
+    "uuid": "c675df81-ea64-48f7-90d5-929c82016558",
+    "komoditas": "PATIN",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "CIMAHI",
+    "size": "140",
+    "price": "53000",
+    "tgl_parsed": "2022-05-25T11:40:07Z",
+    "timestamp": "1653478807516"
+  },
+  {
+    "uuid": "5441fa99-f407-43e7-98ca-f084485335e8",
+    "komoditas": "MAS",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "PURWOREJO",
+    "size": "30",
+    "price": "33000",
+    "tgl_parsed": "2022-05-25T14:01:55Z",
+    "timestamp": "1653487315318"
+  },
+  {
+    "uuid": "129932d3-5c3a-4cfa-b0c6-aabf346afc0f",
+    "komoditas": "BANDENG",
+    "area_provinsi": "KALIMANTAN TIMUR",
+    "area_kota": "BORNEO",
+    "size": "200",
+    "price": "78000",
+    "tgl_parsed": "2022-05-26T10:01:45Z",
+    "timestamp": "1653559305611"
+  },
+  {
+    "uuid": "bfea78ec-3ea1-460a-a62d-21ac8128614c",
+    "komoditas": "BANDENG",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "CIMAHI",
+    "size": "170",
+    "price": "3000",
+    "tgl_parsed": "2022-05-27T04:54:11Z",
+    "timestamp": "1653627251711"
+  },
+  {
+    "uuid": "59accd98-b420-4aa4-aee1-887242331d55",
+    "komoditas": "BANDENG",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "DEPOK",
+    "size": "160",
+    "price": "48000",
+    "tgl_parsed": "2022-05-27T10:43:04Z",
+    "timestamp": "1653648184380"
+  },
+  {
+    "uuid": "f8d45a13-3f30-4e08-b95f-361b2b7c99b0",
+    "komoditas": "PATIN",
+    "area_provinsi": "JAWA TENGAH",
+    "area_kota": "CILACAP",
+    "size": "80",
+    "price": "47000",
+    "tgl_parsed": "2022-05-28T15:26:53Z",
+    "timestamp": "1653751613695"
+  },
+  {
+    "uuid": "654e66f5-e02f-442a-8d0c-892074249fff",
+    "komoditas": "BANDENG",
+    "area_provinsi": "SUMATERA UTARA",
+    "area_kota": "MEDAN",
+    "size": "120",
+    "price": "45000",
+    "tgl_parsed": "2022-05-28T15:49:48Z",
+    "timestamp": "1653752988949"
+  },
+  {
+    "uuid": "81f3b438-9537-4d1c-84b1-6fe99208547a",
+    "komoditas": "BANDENG",
+    "area_provinsi": "JAWA TIMUR",
+    "area_kota": "BANYUWANGI",
+    "size": "110",
+    "price": "9000",
+    "tgl_parsed": "2022-05-28T21:58:59Z",
+    "timestamp": "1653775139559"
+  },
+  {
+    "uuid": "5e057d2d-cb29-496b-9bd0-d256cd0f059d",
+    "komoditas": "BANDENG",
+    "area_provinsi": "JAWA BARAT",
+    "area_kota": "CIREBON",
+    "size": "60",
+    "price": "61000",
+    "tgl_parsed": "2022-05-29T01:38:23Z",
+    "timestamp": "1653788303984"
+  }
+]
