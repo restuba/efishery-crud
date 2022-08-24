@@ -43,6 +43,12 @@ const content = (props) => {
         columns={columns}
         rowKey="uuid"
         pagination={pagination(pageSize)}
+        rowClassName={(record) => {
+          if (!record?.uuid) {
+            return 'inactive';
+          }
+          return 'pointer';
+        }}
       />
       <Pagination
         total={totalData}
