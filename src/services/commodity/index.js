@@ -19,7 +19,7 @@ const getListCommodity = (params = {}) => {
 };
 
 const createCommodity = (body) => {
-  return BaseService.post('/list', body);
+  return BaseService.post('/list', [body]);
 };
 
 export default {

@@ -20,6 +20,8 @@ const Index = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [filterData, setFilterData] = useState({});
 
+  const [isRefetch, setIsRefetch] = useState(false);
+
   const [showCreateModal, setShowCreateModal] = useState(false);
   const [showEditModal, setShowEditModal] = useState(false);
   const [showDeleteModal, setShowDeleteModal] = useState(false);
@@ -49,7 +51,7 @@ const Index = () => {
       .finally(() => {
         setIsLoading(false);
       });
-  }, [keyword, currentPage, pageSize, filterData]);
+  }, [keyword, currentPage, pageSize, filterData, isRefetch]);
 
   useEffect(() => {
     areaService.getListArea().then((res) => {
@@ -118,6 +120,7 @@ const Index = () => {
   const onSearch = (e) => {
     setTimeout(() => {
       setKeyword(e.target.value);
+      setCurrentPage(0);
     }, 1000);
   };
 
@@ -192,6 +195,7 @@ const Index = () => {
           cityList={cityList}
           provinceList={provinceList}
           sizeList={sizeList}
+          setIsRefetch={setIsRefetch}
         />
         <EditCommodity
           isShow={showEditModal}
