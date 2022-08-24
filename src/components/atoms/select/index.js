@@ -3,7 +3,6 @@ import { Select as SelectLib } from 'antd';
 import { colors } from '../../../configs';
 
 const Select = styled(SelectLib)`
-  font-size: 14px;
   display: block;
   .ant-select-selector {
     height: 40px !important;

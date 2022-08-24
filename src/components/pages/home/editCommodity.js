@@ -1,5 +1,5 @@
 import { useForm } from 'antd/lib/form/Form';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { commonMessage } from '../../../configs';
 import { Input, Select } from '../../atoms';
 import { Form, Modal } from '../../molecules';
@@ -15,9 +15,19 @@ const sizeList = [
   },
 ];
 
-const CreateCommodity = (props) => {
+const EditCommodity = (props) => {
   const [form] = useForm();
-  const { isShow, onClose } = props;
+  const { isShow, onClose, selectedCommodity } = props;
+
+  useEffect(() => {
+    form.setFieldsValue({
+      name: selectedCommodity?.komoditas,
+      province_area: selectedCommodity?.area_provinsi,
+      city_area: selectedCommodity?.area_kota,
+      price: selectedCommodity?.price,
+      size: selectedCommodity?.size,
+    });
+  }, [selectedCommodity, form]);
 
   const onSubmit = () => {};
 
@@ -25,20 +35,19 @@ const CreateCommodity = (props) => {
     form.resetFields();
     onClose();
   };
-
   return (
     <Modal
       isShow={isShow}
-      title="Create Commodity"
-      okText="Create"
+      title="Edit Commodity"
+      okText="Update"
       onCancel={onCloseHandler}
       width={820}
-      okForm="create-commodity"
+      okForm="edit-commodity"
     >
       <Form
         form={form}
         layout="vertical"
-        id="create-commodity"
+        id="edit-commodity"
         onFinish={onSubmit}
       >
         <Form.Item
@@ -106,4 +115,4 @@ const CreateCommodity = (props) => {
   );
 };
 
-export default CreateCommodity;
+export default EditCommodity;

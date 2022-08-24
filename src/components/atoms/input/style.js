@@ -6,7 +6,6 @@ const Input = styled(InputLib)`
   border-radius: 12px;
   background-color: ${colors.light2};
   border: none;
-  color: ${colors.dark2};
   height: 40px;
   .ant-input-prefix {
     margin-right: 8px;

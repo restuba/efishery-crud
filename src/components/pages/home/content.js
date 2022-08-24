@@ -13,6 +13,8 @@ const content = (props) => {
     currentPage,
     setCurrentPage,
     totalData,
+    onShowEditCommodity,
+    setSelectedCommodity,
   } = props;
 
   const onChangePageSize = (page) => {
@@ -40,7 +42,7 @@ const content = (props) => {
     >
       <Table
         dataSource={dataSource}
-        columns={columns}
+        columns={columns({ onShowEditCommodity, setSelectedCommodity })}
         rowKey="uuid"
         pagination={pagination(pageSize)}
         rowClassName={(record) => {
