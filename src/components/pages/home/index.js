@@ -18,6 +18,7 @@ const Index = () => {
   const [pageSize, setPageSize] = useState(pageOptions[0]);
   const [keyword, setKeyword] = useState('');
   const [currentPage, setCurrentPage] = useState(0);
+  const [filterData, setFilterData] = useState({});
 
   const [showCreateModal, setShowCreateModal] = useState(false);
   const [showEditModal, setShowEditModal] = useState(false);
@@ -34,7 +35,9 @@ const Index = () => {
       .getListCommodity({
         offset: currentPage * pageSize,
         limit: pageSize,
-        keyword,
+        keyword: keyword.toUpperCase(),
+        province: filterData?.province,
+        city: filterData?.city,
       })
       .then((res) => {
         setCommodityList(res);
@@ -42,7 +45,7 @@ const Index = () => {
       .finally(() => {
         setIsLoading(false);
       });
-  }, [keyword, currentPage, pageSize]);
+  }, [keyword, currentPage, pageSize, filterData]);
 
   useEffect(() => {
     areaService.getListArea().then((res) => {
@@ -110,8 +113,8 @@ const Index = () => {
       <Row gutter={[24, 24]}>
         <Col span={24}>
           <PageTitle
-            title="Page title"
-            subtitle="Page description"
+            title="Commodities"
+            subtitle="Use commodities menu to manage commodities"
             button1={
               <Button type="primary" onClick={onShowCreateModal}>
                 Create Commodity
@@ -129,10 +132,26 @@ const Index = () => {
             selectProps={{
               placeholder: 'Filter by province',
               options: provinceList,
+              onChange: (value) => {
+                setFilterData((prev) => {
+                  return {
+                    ...prev,
+                    province: value,
+                  };
+                });
+              },
             }}
             additionalSelectProps={{
               placeholder: 'Filter by city',
               options: cityList,
+              onChange: (value) => {
+                setFilterData((prev) => {
+                  return {
+                    ...prev,
+                    city: value,
+                  };
+                });
+              },
             }}
           />
         </Col>

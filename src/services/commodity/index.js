@@ -1,3 +1,4 @@
+import { filterEmptyObject, isObjectEmpty } from '../../utils';
 import BaseService from '../baseServices';
 
 const getListCommodity = (params = {}) => {
@@ -6,17 +7,14 @@ const getListCommodity = (params = {}) => {
     limit: params?.limit,
     search: {
       komoditas: params?.keyword,
+      area_provinsi: params?.province,
+      area_kota: params?.city,
     },
   };
 
-  if (!Object.prototype.hasOwnProperty.call(params, 'keyword')) {
-    delete query.search;
-  }
-  if (Object.prototype.hasOwnProperty.call(params, 'keyword')) {
-    if (params.keyword === '' || params.keyword === null) {
-      delete query.search;
-    }
-  }
+  query.search = filterEmptyObject(query.search);
+  if (isObjectEmpty(query.search)) delete query.search;
+
   return BaseService.get('/list', { params: query });
 };
 

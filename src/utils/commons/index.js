@@ -22,3 +22,13 @@ export const getArrayUniqueByKey = (array, key) => {
     ).values(),
   ];
 };
+
+export const filterEmptyObject = (value) => {
+  const data = {};
+  Object.keys(value).forEach((key) => {
+    if (value[key]) {
+      data[key] = value[key];
+    }
+  });
+  return data;
+};
