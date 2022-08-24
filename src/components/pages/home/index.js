@@ -40,7 +40,10 @@ const Index = () => {
         city: filterData?.city,
       })
       .then((res) => {
-        setCommodityList(res);
+        const data = res?.filter((item) => {
+          return item?.uuid;
+        });
+        setCommodityList(data);
       })
       .finally(() => {
         setIsLoading(false);
