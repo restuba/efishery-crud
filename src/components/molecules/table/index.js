@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-import { Table as TableAntd } from 'antd';
+import { Table as TableLib } from 'antd';
 // import boxShadow from '../../configs/boxShadow';
 import { colors } from '../../../configs';
 
-const Table = styled(TableAntd)`
+const Table = styled(TableLib)`
   margin: 24px 0;
   .ant-table {
     padding: 0;
@@ -136,6 +136,13 @@ const Table = styled(TableAntd)`
 
   .pointer {
     cursor: pointer;
+  }
+
+  .ant-table-column-sorter-up,
+  .ant-table-column-sorter-down {
+    &.active svg {
+      color: ${colors.primary};
+    }
   }
 `;
 

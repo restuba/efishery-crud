@@ -1,9 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { HelmetProvider } from 'react-helmet-async';
-import { Provider } from 'react-redux';
 import { Pages } from './components/pages';
-import { store } from './modules';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 import 'antd/dist/antd.less';
@@ -11,11 +9,9 @@ import 'antd/dist/antd.less';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <HelmetProvider>
-        <Pages />
-      </HelmetProvider>
-    </Provider>
+    <HelmetProvider>
+      <Pages />
+    </HelmetProvider>
   </React.StrictMode>
 );
 

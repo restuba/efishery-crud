@@ -4,12 +4,12 @@ const menus = [
     label: 'Dashboard',
   },
   {
-    key: '/settings',
-    label: 'Settings',
+    key: '/account',
+    label: 'Accounts',
   },
   {
-    key: '/commodity',
-    label: 'Commodity',
+    key: '/settings',
+    label: 'Settings',
   },
 ];
 
