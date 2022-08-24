@@ -10,7 +10,7 @@ import { pageOptions } from '../../../configs';
 import CreateCommodity from './createCommodity';
 import EditCommodity from './editCommodity';
 import DeleteCommodity from './deleteCommodity';
-import { areaService, commodityService } from '../../../services';
+import { areaService, commodityService, sizeService } from '../../../services';
 import { getArrayUniqueByKey } from '../../../utils';
 
 const Index = () => {
@@ -28,6 +28,7 @@ const Index = () => {
   const [commodityList, setCommodityList] = useState([]);
   const [provinceList, setProvinceList] = useState([]);
   const [cityList, setCityList] = useState([]);
+  const [sizeList, setSizeList] = useState([]);
 
   useEffect(() => {
     setIsLoading(true);
@@ -75,6 +76,18 @@ const Index = () => {
           'value'
         )
       );
+    });
+  }, []);
+
+  useEffect(() => {
+    sizeService.getListSize().then((res) => {
+      const data = res?.map((item) => {
+        return {
+          value: item?.size,
+          label: item?.size,
+        };
+      });
+      setSizeList(data);
     });
   }, []);
 
@@ -176,6 +189,9 @@ const Index = () => {
         <CreateCommodity
           isShow={showCreateModal}
           onClose={onCloseCreateModal}
+          cityList={cityList}
+          provinceList={provinceList}
+          sizeList={sizeList}
         />
         <EditCommodity
           isShow={showEditModal}

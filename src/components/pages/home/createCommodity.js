@@ -1,23 +1,13 @@
 import { useForm } from 'antd/lib/form/Form';
-import React from 'react';
+import React, { useState } from 'react';
 import { commonMessage } from '../../../configs';
 import { Input, Select } from '../../atoms';
 import { Form, Modal } from '../../molecules';
 
-const sizeList = [
-  {
-    value: '1',
-    label: 'Size 1',
-  },
-  {
-    value: '2',
-    label: 'Size 2',
-  },
-];
-
 const CreateCommodity = (props) => {
   const [form] = useForm();
-  const { isShow, onClose } = props;
+  const [selectedProvince, setSelectedProvince] = useState(null);
+  const { isShow, onClose, cityList, provinceList, sizeList } = props;
 
   const onSubmit = () => {};
 
@@ -25,6 +15,11 @@ const CreateCommodity = (props) => {
     form.resetFields();
     onClose();
   };
+
+  const optionCity = cityList?.filter((item) => {
+    if (!selectedProvince) return item;
+    return item?.province === selectedProvince;
+  });
 
   return (
     <Modal
@@ -63,7 +58,14 @@ const CreateCommodity = (props) => {
             },
           ]}
         >
-          <Select options={sizeList} placeholder="Province area" />
+          <Select
+            options={provinceList}
+            onChange={(value) => {
+              setSelectedProvince(value);
+              form.setFieldsValue({ city_area: null });
+            }}
+            placeholder="Province area"
+          />
         </Form.Item>
         <Form.Item
           label="City Area"
@@ -75,7 +77,7 @@ const CreateCommodity = (props) => {
             },
           ]}
         >
-          <Select options={sizeList} placeholder="City area" />
+          <Select options={optionCity} placeholder="City area" />
         </Form.Item>
         <Form.Item
           label="Price"
