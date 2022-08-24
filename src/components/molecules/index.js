@@ -4,3 +4,4 @@ export { default as EmptyResult } from './emptyResult';
 export { default as Table } from './table';
 export { default as Pagination } from './pagination';
 export { default as Navigation } from './navigation';
+export { default as Modal } from './modal';

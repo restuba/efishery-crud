@@ -8,6 +8,7 @@ import { MainTemplate } from '../../templates';
 import Content from './content';
 import dummy from './dummy.json';
 import { pageOptions } from '../../../configs';
+import CreateCommodity from './createCommodity';
 
 const options = [
   {
@@ -26,6 +27,16 @@ const Index = () => {
   const [keyword, setKeyword] = useState('');
   const [currentPage, setCurrentPage] = useState(0);
 
+  const [showCreateModal, setShowCreateModal] = useState(false);
+
+  const onShowCreateModal = () => {
+    setShowCreateModal(true);
+  };
+
+  const onCloseCreateModal = () => {
+    setShowCreateModal(false);
+  };
+
   const list = dummy;
   return (
     <MainTemplate>
@@ -37,8 +48,11 @@ const Index = () => {
           <PageTitle
             title="Page title"
             subtitle="Page description"
-            button1={<Button type="secondary">Button 1</Button>}
-            button2={<Button type="primary">Button 2</Button>}
+            button1={
+              <Button type="primary" onClick={onShowCreateModal}>
+                Create Commodity
+              </Button>
+            }
           />
         </Col>
         <Col span={24}>
@@ -67,7 +81,10 @@ const Index = () => {
             totalData={list?.length}
           />
         </Col>
-        <Col span={24}>Hello from Home</Col>
+        <CreateCommodity
+          isShow={showCreateModal}
+          onClose={onCloseCreateModal}
+        />
       </Row>
     </MainTemplate>
   );

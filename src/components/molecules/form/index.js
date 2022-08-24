@@ -45,9 +45,9 @@ const Form = styled(FormLib)`
   }
 
   .ant-form-item {
-    margin-bottom: 8px;
+    margin-bottom: 24px;
     .ant-form-item-label {
-      padding: 0 0 12px;
+      padding: 0 0 8px;
       > label {
         color: ${colors.dark2};
         font-weight: 500;
@@ -96,36 +96,15 @@ const Form = styled(FormLib)`
     border-color: ${colors.light2};
   }
 
-  #basic_password {
-    border-radius: 0px;
-  }
-
   .ant-form-item-label > label {
     font-size: 1rem;
     font-weight: 500;
     color: ${colors.dark2};
   }
 
-  .ant-picker-input > input {
-    font-size: 1rem;
-  }
-  .ant-picker {
-    width: 100%;
-    height: 40px;
-    border-radius: 12px;
-    border: 1px solid ${colors.grey1};
-  }
   .ant-select-disabled.ant-select:not(.ant-select-customize-input)
     .ant-select-selector {
     color: ${colors.dark1};
-  }
-
-  .component_form_control_budget {
-    .ant-form-item-control-input-content {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
   }
 
   .ant-form-item-control {
@@ -137,50 +116,6 @@ const Form = styled(FormLib)`
       }
     }
   }
-  .with_border {
-    .ant-checkbox-wrapper {
-      height: 40px !important;
-      border-radius: 12px !important;
-      border: 1px solid ${colors.grey1} !important;
-      font-size: 1rem;
-
-      padding: 0 12px;
-      line-height: 40px;
-    }
-  }
-
-  &.checkbox-orange {
-    .ant-checkbox-checked .ant-checkbox-inner {
-      background-color: ${colors.orange1};
-      border-color: ${colors.orange1};
-    }
-    .ant-checkbox-indeterminate .ant-checkbox-inner::after {
-      background-color: ${colors.orange1};
-    }
-  }
-
-  .phone-number {
-    .ant-input-affix-wrapper {
-      border-radius: 12px;
-      padding: 0px;
-      overflow: hidden;
-
-      .ant-input-prefix {
-        background: ${colors.grey2};
-        padding: 0 10px;
-        margin-right: 0px;
-      }
-
-      .ant-input {
-        border-top: none !important;
-        border-right: none !important;
-        border-bottom: none !important;
-        border-radius: 0px;
-        border-left: 1px solid ${colors.grey1};
-        padding-left: 10px;
-      }
-    }
-  }
 
   .alert-nowrap {
     .ant-form-item-extra {
@@ -188,17 +123,6 @@ const Form = styled(FormLib)`
     }
   }
 
-  &.form_item_without_margin {
-    .ant-form-item {
-      margin-bottom: 0;
-    }
-  }
-
-  /* .ant-form-item-explain.ant-form-item-explain-success {
-    .alert {
-      color: #ff4d4f;
-    }
-  } */
   .ant-form-item-explain {
     color: #ff4d4f;
   }
