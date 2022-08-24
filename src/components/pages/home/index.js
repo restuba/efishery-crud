@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Col, Row } from 'antd';
 import { Helmet } from 'react-helmet-async';
 import { Button } from '../../atoms';
@@ -6,11 +6,11 @@ import { PageTitle } from '../../molecules';
 import { FilterSearch } from '../../organisms';
 import { MainTemplate } from '../../templates';
 import Content from './content';
-import dummy from './dummy.json';
 import { pageOptions } from '../../../configs';
 import CreateCommodity from './createCommodity';
 import EditCommodity from './editCommodity';
 import DeleteCommodity from './deleteCommodity';
+import { commodityService } from '../../../services';
 
 const options = [
   {
@@ -24,8 +24,8 @@ const options = [
 ];
 
 const Index = () => {
+  const [isLoading, setIsLoading] = useState(false);
   const [pageSize, setPageSize] = useState(pageOptions[0]);
-  // eslint-disable-next-line no-unused-vars
   const [keyword, setKeyword] = useState('');
   const [currentPage, setCurrentPage] = useState(0);
 
@@ -34,6 +34,23 @@ const Index = () => {
   const [showDeleteModal, setShowDeleteModal] = useState(false);
 
   const [selectedCommodity, setSelectedCommodity] = useState({});
+  const [commodityList, setCommodityList] = useState([]);
+
+  useEffect(() => {
+    setIsLoading(true);
+    commodityService
+      .getListCommodity({
+        offset: currentPage * pageSize,
+        limit: pageSize,
+        keyword,
+      })
+      .then((res) => {
+        setCommodityList(res);
+      })
+      .finally(() => {
+        setIsLoading(false);
+      });
+  }, [keyword, currentPage, pageSize]);
 
   const onShowCreateModal = () => {
     setShowCreateModal(true);
@@ -59,7 +76,12 @@ const Index = () => {
     setShowDeleteModal(false);
   };
 
-  const list = dummy;
+  const onSearch = (e) => {
+    setTimeout(() => {
+      setKeyword(e.target.value);
+    }, 1000);
+  };
+
   return (
     <MainTemplate>
       <Helmet>
@@ -80,7 +102,9 @@ const Index = () => {
         <Col span={24}>
           <FilterSearch
             inputProps={{
-              placeholder: 'Search',
+              placeholder: 'Search commodity by name',
+              onChange: onSearch,
+              allowClear: true,
             }}
             selectProps={{
               placeholder: 'Select',
@@ -94,13 +118,14 @@ const Index = () => {
         </Col>
         <Col span={24}>
           <Content
-            dataSource={list}
+            isLoading={isLoading}
+            dataSource={commodityList}
             pageSize={pageSize}
             setPageSize={setPageSize}
             keyword={keyword}
             currentPage={currentPage}
             setCurrentPage={setCurrentPage}
-            totalData={list?.length}
+            totalData={commodityList?.length}
             onShowEditCommodity={onShowEditCommodity}
             setSelectedCommodity={setSelectedCommodity}
             onShowDeleteModal={onShowDeleteModal}

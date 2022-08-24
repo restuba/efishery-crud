@@ -6,6 +6,7 @@ import { pageOptions, pagination } from '../../../configs';
 
 const content = (props) => {
   const {
+    isLoading,
     keyword,
     dataSource,
     pageSize,
@@ -42,6 +43,7 @@ const content = (props) => {
       }}
     >
       <Table
+        loading={isLoading}
         dataSource={dataSource}
         columns={columns({
           onShowEditCommodity,
