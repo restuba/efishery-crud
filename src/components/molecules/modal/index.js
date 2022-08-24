@@ -23,7 +23,6 @@ const Index = (props) => {
     zIndex,
     marginTop,
     hideFooter = false,
-    hideCancelBtn = false,
     backgroundColor,
   } = props;
 
@@ -51,16 +50,14 @@ const Index = (props) => {
           <div className="component_body">{children}</div>
           {!hideFooter && (
             <div className="component_footer">
-              {!hideCancelBtn && (
-                <Button
-                  type={type === 'danger' || 'secondary'}
-                  onClick={onCancel}
-                  loading={isLoadingButton}
-                  htmlType="button"
-                >
-                  {cancelText ?? 'Cancel'}
-                </Button>
-              )}
+              <Button
+                type={type === 'danger' || 'secondary'}
+                onClick={onCancel}
+                loading={isLoadingButton}
+                htmlType="button"
+              >
+                {cancelText ?? 'Cancel'}
+              </Button>
               <Button
                 type={type === 'danger' ? 'danger' : 'primary'}
                 form={okForm}

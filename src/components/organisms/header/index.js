@@ -7,16 +7,18 @@ import Wrapper, { MainHeader } from './style';
 const Index = () => {
   return (
     <Wrapper>
-      <MainHeader>
-        <Link to="/">
-          <img
-            src={logoEFishery}
-            alt="eFishery logo"
-            className="component_logo"
-          />
-        </Link>
-      </MainHeader>
-      <Navigation />
+      <div className="component_header">
+        <MainHeader>
+          <Link to="/">
+            <img
+              src={logoEFishery}
+              alt="eFishery logo"
+              className="component_logo"
+            />
+          </Link>
+        </MainHeader>
+        <Navigation />
+      </div>
     </Wrapper>
   );
 };

@@ -4,9 +4,13 @@ import { colors } from '../../../configs';
 const Wrapper = styled.div`
   position: sticky;
   top: 0;
-  background-color: ${colors.light4};
-  border-bottom: 2px solid ${colors.light0};
+  background-color: ${colors.white};
+  border-bottom: 1px solid ${colors.light0};
   z-index: 100;
+  .component_header {
+    max-width: 1280px;
+    margin: auto;
+  }
 `;
 
 export default Wrapper;

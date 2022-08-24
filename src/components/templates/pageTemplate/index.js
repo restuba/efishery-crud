@@ -5,7 +5,7 @@ const Index = (props) => {
   const { children } = props;
   return (
     <Wrapper>
-      <div className="component_root_template_children">{children}</div>
+      <div className="component_page_template_children">{children}</div>
     </Wrapper>
   );
 };
