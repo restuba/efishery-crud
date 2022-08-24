@@ -1,5 +1,5 @@
 import { filterEmptyObject, isObjectEmpty } from '../../utils';
-import BaseService from '../baseServices';
+import { SteinService } from '..';
 
 const getListCommodity = (params = {}) => {
   const query = {
@@ -15,19 +15,24 @@ const getListCommodity = (params = {}) => {
   query.search = filterEmptyObject(query.search);
   if (isObjectEmpty(query.search)) delete query.search;
 
-  return BaseService.get('/list', { params: query });
+  return SteinService.read('list', query);
 };
 
 const createCommodity = (body) => {
-  return BaseService.post('/list', [body]);
+  return SteinService.append('list', [body]);
 };
 
-const updateCommodity = ({ newValue, oldValue }) => {
-  return BaseService.put('/list', { condition: oldValue, set: newValue });
+const updateCommodity = ({ body, uuid }) => {
+  return SteinService.edit('list', { search: { uuid }, set: body });
+};
+
+const deleteCommodity = (uuid) => {
+  return SteinService.delete('list', { search: { uuid } });
 };
 
 export default {
   getListCommodity,
   createCommodity,
   updateCommodity,
+  deleteCommodity,
 };

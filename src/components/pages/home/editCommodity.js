@@ -3,6 +3,7 @@ import { useForm } from 'antd/lib/form/Form';
 import React, { useEffect, useState } from 'react';
 import { commonMessage } from '../../../configs';
 import { commodityService } from '../../../services';
+import { filterEmptyObject } from '../../../utils';
 import { Input, Select } from '../../atoms';
 import { Form, Modal } from '../../molecules';
 
@@ -45,7 +46,10 @@ const EditCommodity = (props) => {
     };
     setIsLoading(true);
     commodityService
-      .updateCommodity({ oldValue: selectedCommodity, newValue: body })
+      .updateCommodity({
+        uuid: selectedCommodity?.uuid,
+        body: filterEmptyObject(body),
+      })
       .then(() => {
         message.success(commonMessage.successUpdate('commodity'));
         onCloseHandler();

@@ -210,6 +210,7 @@ const Index = () => {
           isShow={showDeleteModal}
           onClose={onCloseDeleteModal}
           selectedCommodity={selectedCommodity}
+          setIsRefetch={setIsRefetch}
         />
       </Row>
     </MainTemplate>
