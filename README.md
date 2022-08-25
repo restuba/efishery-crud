@@ -2,7 +2,7 @@
 
 This example shows how to use React.js along with [Ant Design of React](https://ant.design) & [Styled Component](https://styled-components.com/). This is intended to show the integration of these UI toolkit with the Framework.
 
-![Commodity Search Screenshot](https://github.com/restuba/efishery-crud/blob/master/public/screencapture-efishery-crud-vercel-app-1.png)
+![screencapture-efishery-crud-vercel-app-1](https://user-images.githubusercontent.com/49330712/186552934-7645fc74-9760-49ec-a460-5cf7b6d0485f.png)
 
 
 ## Preview
