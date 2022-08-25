@@ -1,5 +1,4 @@
-/* eslint-disable no-unused-vars */
-import React, { useState } from 'react';
+import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import menus from './menus';
 import Navigation from './style';
@@ -11,15 +10,12 @@ const Index = () => {
   return (
     <Navigation
       mode="horizontal"
+      selectedKeys={pathname}
       onClick={(item) => {
-        const { key } = item;
-        navigate(key);
+        navigate(item.key);
       }}
-    >
-      {menus.map((item) => {
-        return <Navigation.Item key={item.key}>{item.label}</Navigation.Item>;
-      })}
-    </Navigation>
+      items={menus}
+    />
   );
 };
 

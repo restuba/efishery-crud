@@ -1,57 +1,37 @@
-import { EditOutlined, MinusCircleOutlined } from '@ant-design/icons';
 import { ActionMenus } from '../../molecules';
-
-const actions = (props) => {
-  const {
-    record,
-    onShowEditCommodity,
-    onShowDeleteModal,
-    setSelectedCommodity,
-  } = props;
-  return [
-    {
-      id: 1,
-      text: 'Edit Commodity',
-      icon: <EditOutlined />,
-      onClick: () => {
-        onShowEditCommodity();
-        setSelectedCommodity(record);
-      },
-    },
-    {
-      id: 2,
-      text: 'Delete Commodity',
-      icon: <MinusCircleOutlined />,
-      type: 'danger',
-      onClick: () => {
-        onShowDeleteModal();
-        setSelectedCommodity(record);
-      },
-    },
-  ];
-};
+import { toCurrency } from '../../../utils';
+import actions from './content.action';
 
 const columns = (props) => {
   const { onShowEditCommodity, onShowDeleteModal, setSelectedCommodity } =
     props;
   return [
     {
-      title: 'Komoditas',
+      title: 'Commodity',
       dataIndex: 'komoditas',
+      sorter: (a, b) => {
+        return a?.komoditas.localeCompare(b?.komoditas);
+      },
       render: (record) => {
         return record || '-';
       },
     },
     {
-      title: 'Area Provinsi',
+      title: 'Province',
       dataIndex: 'area_provinsi',
+      sorter: (a, b) => {
+        return a?.area_provinsi.localeCompare(b?.area_provinsi);
+      },
       render: (record) => {
         return record || '-';
       },
     },
     {
-      title: 'Area Kota',
+      title: 'City',
       dataIndex: 'area_kota',
+      sorter: (a, b) => {
+        return a?.area_kota.localeCompare(b?.area_kota);
+      },
       render: (record) => {
         return record || '-';
       },
@@ -59,6 +39,9 @@ const columns = (props) => {
     {
       title: 'Size',
       dataIndex: 'size',
+      sorter: (a, b) => {
+        return a.size - b.size;
+      },
       render: (record) => {
         return record || '-';
       },
@@ -66,8 +49,12 @@ const columns = (props) => {
     {
       title: 'Price',
       dataIndex: 'price',
+      sorter: (a, b) => {
+        return a.price - b.price;
+      },
       render: (record) => {
-        return record || '-';
+        if (!record) return '-';
+        return toCurrency(record, 'IDR');
       },
     },
     {
@@ -82,6 +69,7 @@ const columns = (props) => {
               onShowDeleteModal,
               setSelectedCommodity,
             })}
+            minWidth={200}
           />
         );
       },

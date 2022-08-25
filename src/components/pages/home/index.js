@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Col, Row } from 'antd';
 import { Helmet } from 'react-helmet-async';
 import { Button } from '../../atoms';
@@ -6,34 +6,92 @@ import { PageTitle } from '../../molecules';
 import { FilterSearch } from '../../organisms';
 import { MainTemplate } from '../../templates';
 import Content from './content';
-import dummy from './dummy.json';
 import { pageOptions } from '../../../configs';
 import CreateCommodity from './createCommodity';
 import EditCommodity from './editCommodity';
 import DeleteCommodity from './deleteCommodity';
-
-const options = [
-  {
-    value: '1',
-    label: 'Option 1',
-  },
-  {
-    value: '2',
-    label: 'Option 2',
-  },
-];
+import { areaService, commodityService, sizeService } from '../../../services';
+import { getArrayUniqueByKey } from '../../../utils';
 
 const Index = () => {
+  const [isLoading, setIsLoading] = useState(false);
   const [pageSize, setPageSize] = useState(pageOptions[0]);
-  // eslint-disable-next-line no-unused-vars
   const [keyword, setKeyword] = useState('');
   const [currentPage, setCurrentPage] = useState(0);
+  const [filterData, setFilterData] = useState({});
+
+  const [isRefetch, setIsRefetch] = useState(false);
 
   const [showCreateModal, setShowCreateModal] = useState(false);
   const [showEditModal, setShowEditModal] = useState(false);
   const [showDeleteModal, setShowDeleteModal] = useState(false);
 
   const [selectedCommodity, setSelectedCommodity] = useState({});
+  const [commodityList, setCommodityList] = useState([]);
+  const [provinceList, setProvinceList] = useState([]);
+  const [cityList, setCityList] = useState([]);
+  const [sizeList, setSizeList] = useState([]);
+
+  useEffect(() => {
+    setIsLoading(true);
+    commodityService
+      .getListCommodity({
+        offset: currentPage * pageSize,
+        limit: pageSize,
+        keyword: keyword.toUpperCase(),
+        province: filterData?.province,
+        city: filterData?.city,
+      })
+      .then((res) => {
+        const data = res?.filter((item) => {
+          return item?.uuid;
+        });
+        setCommodityList(data);
+      })
+      .finally(() => {
+        setIsLoading(false);
+      });
+  }, [keyword, currentPage, pageSize, filterData, isRefetch]);
+
+  useEffect(() => {
+    areaService.getListArea().then((res) => {
+      setProvinceList(
+        getArrayUniqueByKey(
+          res.map((item) => {
+            return {
+              value: item?.province,
+              label: item?.province,
+            };
+          }),
+          'value'
+        )
+      );
+      setCityList(
+        getArrayUniqueByKey(
+          res.map((item) => {
+            return {
+              value: item?.city,
+              label: item?.city,
+              province: item?.province,
+            };
+          }),
+          'value'
+        )
+      );
+    });
+  }, []);
+
+  useEffect(() => {
+    sizeService.getListSize().then((res) => {
+      const data = res?.map((item) => {
+        return {
+          value: item?.size,
+          label: item?.size,
+        };
+      });
+      setSizeList(data);
+    });
+  }, []);
 
   const onShowCreateModal = () => {
     setShowCreateModal(true);
@@ -59,7 +117,13 @@ const Index = () => {
     setShowDeleteModal(false);
   };
 
-  const list = dummy;
+  const onSearch = (e) => {
+    setTimeout(() => {
+      setKeyword(e.target.value);
+      setCurrentPage(0);
+    }, 1000);
+  };
+
   return (
     <MainTemplate>
       <Helmet>
@@ -68,8 +132,8 @@ const Index = () => {
       <Row gutter={[24, 24]}>
         <Col span={24}>
           <PageTitle
-            title="Page title"
-            subtitle="Page description"
+            title="Commodities"
+            subtitle="Use commodities menu to manage commodities"
             button1={
               <Button type="primary" onClick={onShowCreateModal}>
                 Create Commodity
@@ -80,27 +144,46 @@ const Index = () => {
         <Col span={24}>
           <FilterSearch
             inputProps={{
-              placeholder: 'Search',
+              placeholder: 'Search commodity by name',
+              onChange: onSearch,
+              allowClear: true,
             }}
             selectProps={{
-              placeholder: 'Select',
-              options,
+              placeholder: 'Filter by province',
+              options: provinceList,
+              onChange: (value) => {
+                setFilterData((prev) => {
+                  return {
+                    ...prev,
+                    province: value,
+                  };
+                });
+              },
             }}
             additionalSelectProps={{
-              placeholder: 'Additional Select 1',
-              options,
+              placeholder: 'Filter by city',
+              options: cityList,
+              onChange: (value) => {
+                setFilterData((prev) => {
+                  return {
+                    ...prev,
+                    city: value,
+                  };
+                });
+              },
             }}
           />
         </Col>
         <Col span={24}>
           <Content
-            dataSource={list}
+            isLoading={isLoading}
+            dataSource={commodityList}
             pageSize={pageSize}
             setPageSize={setPageSize}
             keyword={keyword}
             currentPage={currentPage}
             setCurrentPage={setCurrentPage}
-            totalData={list?.length}
+            totalData={commodityList?.length}
             onShowEditCommodity={onShowEditCommodity}
             setSelectedCommodity={setSelectedCommodity}
             onShowDeleteModal={onShowDeleteModal}
@@ -109,16 +192,25 @@ const Index = () => {
         <CreateCommodity
           isShow={showCreateModal}
           onClose={onCloseCreateModal}
+          cityList={cityList}
+          provinceList={provinceList}
+          sizeList={sizeList}
+          setIsRefetch={setIsRefetch}
         />
         <EditCommodity
           isShow={showEditModal}
           onClose={onCloseEditModal}
           selectedCommodity={selectedCommodity}
+          cityList={cityList}
+          provinceList={provinceList}
+          sizeList={sizeList}
+          setIsRefetch={setIsRefetch}
         />
         <DeleteCommodity
           isShow={showDeleteModal}
           onClose={onCloseDeleteModal}
           selectedCommodity={selectedCommodity}
+          setIsRefetch={setIsRefetch}
         />
       </Row>
     </MainTemplate>

@@ -26,4 +26,10 @@ export const commonMessage = {
   failedUpload: (message) => {
     return `Unsuccessful upload ${message}`;
   },
+  successDelete: (message) => {
+    return `Successful delete ${message}`;
+  },
+  failedDelete: (message) => {
+    return `Unsuccessful delete ${message}`;
+  },
 };
